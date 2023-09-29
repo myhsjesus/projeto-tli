@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', arial;
+}
+/*montando o style footer*/
+.footer { 
+    margin-top: 3%;
+    display: grid; 
+    grid-template-columns: 30% 30% 30%;  
+    grid-template-rows: 55px 65px; 
+    background-color: #005bc5; 
+    color: #fff;
+    gap: 10px; 
+    grid-template-areas: 'insta text txt' 
+                         'email text tila'  
+}
+.imgfooter{
+    grid-area: insta;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgfooter2{
+    grid-area: email;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgfooter a:hover{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    flex-direction: row;
+    border-bottom: 2px solid #fff;
+  }
+  .imgfooter2 a:hover{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+  }
+.text{
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.txtLatila{
+    grid-area: txt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.latila{
+    grid-area: tila;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgfooter img{
+    max-width: 50px;
+    margin: 1%;
+}
+.imgfooter2 img{
+    max-width: 50px;
+    margin: 1%;
+}
+.latila img{
+    max-width: 60px;
+    background-color: #005bc5;
+    padding: 3%;
+}
+.imgfooter a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    flex-direction: row;
+}
+.imgfooter2 a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.latila a:hover{
+    transform: scale(1.1);
+}

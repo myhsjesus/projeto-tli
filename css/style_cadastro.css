@@ -1,0 +1,256 @@
+/* Define estilos para todos os elementos no documento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial;
+    /* Define a fonte padrão para todos os elementos como 'Roboto' ou 'Arial' se 'Roboto' não estiver disponível */
+}
+
+/* Define o estilo para o corpo da página */
+body {
+    background: rgb(0, 73, 140);
+    /* Define a cor de fundo do corpo com gradiente */
+    background: radial-gradient(circle, rgb(23, 119, 216) 0%, rgb(38, 114, 185) 25%, rgb(49, 115, 177) 50%, rgba(45, 123, 196, 1) 75%, rgba(60, 139, 214, 1) 100%);
+}
+
+.title,
+h2 {
+    color: #fff;
+}
+
+/* Define o estilo para o contêiner geral usando uma grade */
+.geral {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    /* Cria duas colunas iguais, cada uma ocupando metade da largura disponível */
+    grid-template-rows: 25px 850px 25px;
+    /* Define as alturas das três linhas da grade */
+    grid-template-areas: '. .'
+        /* A primeira linha não contém conteúdo */
+        'logo form'
+        /* A segunda linha contém o logotipo e o formulário */
+        'logo .';
+    /* A terceira linha contém apenas o logotipo */
+}
+
+/* Define o estilo para o logotipo */
+.logotipo {
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    display: flex;
+    flex-direction: column;
+    /* Define a direção da disposição dos elementos como coluna */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo dentro do logotipo */
+    align-items: center;
+    /* Centraliza horizontalmente o conteúdo dentro do logotipo */
+    background-color: transparent;
+    /* Define a cor de fundo do logotipo como branco (#fff) */
+    font-size: 30px;
+    /* Define o tamanho da fonte como 30 pixels */
+    grid-area: logo;
+    /* Define a área da grade ocupada pelo logotipo */
+    margin: 6%;
+    /* Define uma margem de 6% em todas as direções */
+}
+
+.logotipo .title {
+    font-size: 60px;
+}
+
+/* Define o estilo para a imagem do logotipo */
+.logotipo img {
+    max-width: 600px;
+    /* Define a largura máxima da imagem do logotipo como 400 pixels */
+}
+
+/* Define o estilo para a seção de cadastro */
+.cadastrar {
+    grid-area: form;
+    /* Define a área da grade ocupada pela seção de cadastro */
+    display: flex;
+    flex-direction: column;
+    /* Define a direção da disposição dos elementos como coluna */
+    align-items: center;
+    /* Centraliza horizontalmente o conteúdo dentro da seção de cadastro */
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo dentro da seção de cadastro */
+    vertical-align: middle;
+    /* Alinha verticalmente o conteúdo ao meio (não é uma propriedade CSS válida) */
+}
+
+.button-contraste {
+    color: #fff;
+    background-color: #001449;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 25px;
+}
+
+.button-contraste,
+.button-contraste:focus {
+    outline: none;
+    border-color: #005BC5;
+    box-shadow: 0 0 0 3px #01346e;
+}
+
+.button-contraste:hover{
+    background-color:#00B4FC ;
+}
+
+/* Define o estilo para o contêiner do formulário */
+.container {
+    text-align: center;
+    /* Centraliza o texto no contêiner */
+    background-color: #fff;
+    /* Define a cor de fundo do contêiner como branco (#fff) */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados com um raio de 5px ao contêiner */
+    box-shadow: 0 0 10px #000;
+    /* Adiciona uma sombra ao contêiner */
+    padding: 5%;
+    /* Adiciona preenchimento interno de 5% */
+    width: 315px
+        /* Define a largura máxima do contêiner como 600 pixels */
+}
+
+.container h1{
+    padding: 5%;
+}
+
+/* Define estilos para o formulário */
+form {
+    display: inline-block;
+    /* Define o formulário como um bloco de nível de linha */
+    text-align: center;
+    /* Centraliza o texto no formulário */
+}
+
+/* Define estilos para as etiquetas dentro do formulário */
+form label {
+    display: block;
+    /* Define as etiquetas como blocos de nível de bloco */
+    margin-bottom: 10%;
+    /* Adiciona margem inferior de 10% às etiquetas */
+}
+
+/* Define estilos para os campos de entrada de texto e senha */
+form input[type="text"],
+form input[type="password"] {
+    background-color: #fff;
+    /* Define a cor de fundo dos campos como branco (#fff) */
+    padding: 5px;
+    /* Adiciona preenchimento interno de 5px nos campos */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados com um raio de 5px aos campos */
+    border: 1px solid #000;
+    /* Define uma borda de 1px sólida em torno dos campos */
+    width: 100%;
+    /* Define a largura dos campos como 100% da largura disponível */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior de 20px aos campos */
+}
+
+/* Define estilos para o botão de envio */
+.container button {
+    color: #fff;
+    background-color: #001449;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 25px;
+}
+
+.container button,
+.container button:focus {
+    outline: none;
+    border-color: #005BC5;
+    box-shadow: 0 0 0 3px #01346e;
+}
+
+
+.container button:hover{
+    background-color:#00B4FC ;
+     }
+
+/* Define estilos para links dentro do botão */
+button a {
+    text-decoration: none;
+    /* Remove a decoração de texto (sublinhado) dos links dentro do botão */
+    color: #fff;
+    /* Define a cor do texto dos links como branco (#fff) */
+}
+
+/* Estilo para o modo de alto contraste */
+body.high-contrast {
+    background: rgb(0, 43, 98) !important;
+    background: radial-gradient(circle, rgba(0, 43, 98, 1) 0%, rgba(10, 55, 111, 1) 25%, rgba(19, 66, 125, 1) 50%, rgba(29, 78, 138, 1) 75%, rgba(38, 90, 151, 1) 100%) !important;
+}
+
+body.high-contrast .title {
+    color: #fff !important;
+}
+
+body.high-contrast h2 {
+    color: #fff;
+}
+
+body.high-contrast .container {
+    color: #fff !important;
+    background-color: #000 !important;
+    /* Define a cor de fundo do contêiner como branco (#fff) */
+    box-shadow: 0 0 10px #fff !important;
+}
+body.high-contrast form input[type="text"] {
+    background-color: #000;
+    /* Define a cor de fundo dos campos como branco (#000) */
+    border: 1px solid #fff;
+    /* Define uma borda de 1px sólida em torno dos campos */
+}
+body.high-contrast form input[type="password"] {
+    background-color: #000;
+    /* Define a cor de fundo dos campos como branco (#000) */
+    border: 1px solid #fff;
+    /* Define uma borda de 1px sólida em torno dos campos */
+}
+body.high-contrast .button-contraste {
+    color: #fff;
+    background-color: rgba(0, 73, 140, 1);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 25px;
+}
+
+body.high-contrast .button-contraste,
+.button-contraste:focus {
+    outline: none;
+    border-color: rgb(57, 134, 206);
+    box-shadow: 0 0 0 3px #021935;
+}
+
+body.high-contrast .button-contraste:hover{
+    background-color:#00B4FC ;
+}
+
+@media(max-width:768px){
+    .geral{
+        grid-template-columns: 98% 2%;
+        /* Cria duas colunas iguais, cada uma ocupando metade da largura disponível */
+        grid-template-rows: 25px 850px 850px;
+        /* Define as alturas das três linhas da grade */
+        grid-template-areas: '. .'
+            /* A primeira linha não contém conteúdo */
+            'logo .'
+            /* A segunda linha contém o logotipo e o formulário */
+            'form .';
+        /* A terceira linha contém apenas o logotipo */
+    }
+}
+  
+    

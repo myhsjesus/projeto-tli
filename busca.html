@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_busca.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/quebraCabeçasTLG.png"/>
+    <title>TLI- Sua busca</title>
+</head>
+<body>
+     <!--Header-->
+     
+     <header class="container-header">
+                
+        <h1 class="title">De acordo com sua busca:</h1>
+        
+        <img class="img-mao2" src="img/palma-da-mao-branca.png" alt="mao-branca">
+
+        <img class="img-mao" src="img/palma-da-mao.png" alt="mao-preta">
+
+        <img src="img/contraste.png" class="contraste2" alt="Contraste-branco" onclick="toggleContrast()">
+
+        <img src="img/contraste2.png" class="contraste" alt="Contraste-preto" onclick="toggleContrast()">
+    
+    </header>
+    <!-- Fim do Header-->
+
+    <!-- cards onde aparecerão os destinos -->
+    <div class="card-container" id="card">
+        <div class="card">
+            <div>
+            <img src="img/destino1.jpg" alt="foto do primeiro destino">
+            </div>
+            <h2 class="card-title">Destino 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit 
+                fringilla dui, commodo ornare arcu eleifend quis. Quisque at convallis magna. 
+                Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae;Praesent convallis commodo quam, sit amet volutpat diam fermentum varius.</p>
+            <button class="card-button">Compre Aqui</button>
+        </div>
+        <div class="card">
+            <div>
+            <img src="img/destino2.jpg" alt="foto do segundo destino">
+            </div>
+            <h2 class="card-title">Destino 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit 
+                fringilla dui, commodo ornare arcu eleifend quis. Quisque at convallis magna. 
+                Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae;Praesent convallis commodo quam, sit amet volutpat diam fermentum varius.</p>
+            <button class="card-button">Compre Aqui</button>
+        </div>
+        <div class="card finish-card">
+            <div>
+            <img src="img/destino3.jpg" alt="foto do terceito destino">
+            </div>
+            <h2 class="card-title">Destino 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit 
+                fringilla dui, commodo ornare arcu eleifend quis. Quisque at convallis magna. 
+                Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae;Praesent convallis commodo quam, sit amet volutpat diam fermentum varius.</p>
+            <button class="card-button">Compre Aqui</button>
+        </div>
+    </div>
+    <!-- fim dos cards -->
+    <!-- rodapé do site -->
+    <footer class="footer">
+        <div class="contatos">
+          <div class="imgfooter"><img src="img/instagram.png" alt=""><a class="perfil" href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a></div>
+          <div class="imgfooter2"><img src="img/email.png" alt=""><a href="mailto:theleadersgirls2023@gmail.com">theleadersgirls2023@gmail.com</a></div>
+        </div>
+        <p class="text">&copy; COPYRIGHT FOR TLG</p>
+        <p class="txtLatila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
+        <div class="latila"><a href="sitelatila.com"><img src="img/logo_latila.png" alt="siteLATILA"></a></div>
+    </footer>
+    <!-- fim do rodapé -->
+    <!-- link para o script -->
+    <script src="js/script_contraste.js"></script>
+</body>
+</html>

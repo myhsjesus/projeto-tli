@@ -1,0 +1,257 @@
+/*configuração padrão*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+/*corpo*/
+body{
+  font-family:Nunito, sans-serif ;
+  color: #000000;
+  background-color: #ffffff;
+  height: 200px;
+   
+}
+ 
+h1, h2, h3{
+  font-family:Asap, sans-serif;
+  color:#001449 !important;
+}
+
+/*estilização do header*/
+.container-header{  
+  grid-area: header;
+  padding-top: 2%;
+  display: grid; 
+  grid-template-columns: 10% 80% 5% 5%;  
+  grid-template-rows: 35px 35px;
+  grid-template-areas: '. title contraste img-mao'
+                       '. title contraste img-mao'; 
+}
+
+.title { 
+  grid-area: title; 
+  text-align: center;
+} 
+
+.img-mao{
+  grid-area: img-mao;
+  width: 30px;
+  height: 30px;
+  padding-top: 3%;
+}
+ 
+.img-mao2{
+  grid-area: img-mao2;
+  width: 30px;
+  height: 30px;
+}
+
+.img-mao:hover{
+    transform: scale(1.1);
+}
+
+.img-mao2:hover{
+  transform: scale(1.1);
+}
+
+.contraste{
+  grid-area: contraste;
+  width: 40px;
+  height: 40px;
+}
+
+.contraste2{
+  grid-area: contraste2;
+  width: 40px;
+  height: 40px;
+}
+ 
+.contraste:hover{
+     transform: scale(1.1);
+}
+
+.contraste2:hover{
+  transform: scale(1.1);
+}
+
+/*fim do header*/
+
+/*Estilos para o container dos cartões*/
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 5%;
+    max-width: 1200px;
+    margin: 2% auto;
+    margin-top: 2%;
+}
+/*Estilos para os cartões individuais*/
+.card{
+    text-align: left;
+    border: 1px solid #005BC5;
+    padding: 7%;
+    margin: 2%;
+    box-shadow: 0 2px 4px #01346e;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 50px 200px 50px;
+    grid-template-areas: "image title "
+                         "image text "
+                         "image button ";
+}
+.card-title{
+    grid-area: title;
+}
+.card p{
+    grid-area: text;
+}
+.card img{
+  max-width: 600px;
+  max-height: 300px;
+  grid-area: image;
+}
+.card-button{
+  margin-bottom: 2%;
+  padding: 4%;
+  width: 25%;
+  height: 15%;
+  background-color: #001449;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  grid-area: button;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.card-button,
+.card-button:focus {
+  outline: none;
+  border-color:#005BC5;  
+  box-shadow: 0 0 0 3px #01346e;
+}
+    
+.card-button:hover{
+background-color:#00B4FC ; 
+}
+
+.finish-card{
+    margin-bottom: 20%;
+}
+
+/*montando o style footer*/
+.footer { 
+    margin-top: 5%;
+    display: grid; 
+    grid-template-columns: 30% 30% 30%;  
+    grid-template-rows: 55px 65px; 
+    background-color: #005bc5; 
+    color: #fff;
+    gap: 10px; 
+    grid-template-areas: 'insta text txt' 
+                         'email text tila'  
+}
+.imgfooter{
+    grid-area: insta;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgfooter2{
+    grid-area: email;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgfooter a:hover{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    flex-direction: row;
+    border-bottom: 2px solid #fff;
+  }
+  .imgfooter2 a:hover{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+  }
+.text{
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.txtLatila{
+    grid-area: txt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.latila{
+    grid-area: tila;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgfooter img{
+    max-width: 50px;
+    margin: 1%;
+    background-color: #005bc5;
+}
+.imgfooter2 img{
+    max-width: 50px;
+    margin: 1%;
+    background-color: #005bc5;
+}
+.latila img{
+    max-width: 60px;
+    background-color: #005bc5;
+    padding: 3%;
+}
+.imgfooter a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    flex-direction: row;
+}
+.imgfooter2 a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.latila a:hover{
+    transform: scale(1.1);
+}
+
+/*Contraste*/
+body.high-contrast {
+    color: #fff !important;
+    background-color: #000 !important;
+    font-size: large !important;
+  }
+
+body.high-contrast h1 {
+  color: #fff !important;
+}
+    
+body.high-contrast h2 {
+  color: #17f9ff !important;
+}
+
+.high-contrast p{
+  color: #ddd !important;
+}
+
+.high-contrast .container-header{
+  grid-template-areas: '. title contraste2 img-mao2'
+                       '. title contraste2 img-mao2' !important; 
+}

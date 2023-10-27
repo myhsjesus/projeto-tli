@@ -11,8 +11,3 @@ function toggleReading(){
 function toggleFont(){
     bodyElement.classList.toggle("font-size")
 };
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}

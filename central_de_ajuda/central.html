@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_central.css">
+    <script src="js/script_acessibilidade.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/quebraCabeçasTLG.png"/>
+    <title>Central de ajuda</title>
+</head>
+<body >
+    <div class="container">
+      
+     <div class="container_menu">  
+
+        <img class="logo" src="img/logo_png.png" alt="logo">
+
+        <nav class="dp-menu">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinos</a>
+                    <ul>
+                        <li><a href="#">Lugares</a></li>
+                        <li><a href="#">Hoteis</a></li>
+                        <li><a href="#">Restaurantes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+    </div> 
+        
+        <div class="central-container">  
+            
+     <!--Header-->
+     
+     <header class="container-header">
+                
+        <h1 class="title">Central de Ajuda</h1>
+    
+    </header>
+    <!-- Fim do Header-->
+
+    <!--Criando os cards da página-->
+
+            <div class="card-container" id="card">
+                <div class="card">
+                    <div class="card-title">
+                    <h2> Dicas</h2>
+                    <img src="img/dicas.png" alt="logo para dicas">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit 
+                        fringilla dui, commodo ornare arcu eleifend quis. Quisque at convallis magna. 
+                        Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                        posuere cubilia curae;Praesent convallis commodo quam, sit amet volutpat diam fermentum varius.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                    <h2>  Duvidas Frequentes</h2>
+                    <img src="img/duvidas.png" alt="logo para duvidas">
+                    </div>
+                    <p>Sed malesuada velit sit amet urna pretium, vel elementum ex viverra.
+                        Proin iaculis lectus enim, lacinia placerat tortor facilisis sed. Aenean vitae
+                        ultricies quam. Nullam leo sapien, porttitor non fermentum nec, tincidunt in mi.
+                        Phasellus vitae egestas orci. Etiam vitae quam efficitur, maximus arcu quis, ornare lorem.</p>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                    <h2> Reclame aqui:</h2>
+                    <img src="img/reclamação.png" alt="logo para reclame aqui">
+                    </div>
+                    <p>Phasellus maximus, metus non placerat tempus, turpis velit 
+                    condimentum diam, ultricies tristique lorem massa eu neque.
+                    Sed cursus non lectus sit amet molestie. </p>
+                    <button class="card-button">Entre em contato</button>
+                </div>
+            </div>
+        <div class="contact-container">
+                <h1 class="contact title1">Entre em contato conosco!</h1>
+            
+            <div class="card-container2" id="card">
+                <div class="card2">
+                    <div class="card-title">
+                    <h2> WhatsApp</h2>
+                    <img src="img/dicas.png" alt="logo para WhatsApp">
+                    </div>
+                    <p class="text-contact">Nos chame no WhatsApp para um atendimento rápido e personalizado!</p>
+                    <button class="card-button">Entre em contato</button>
+                </div>
+                <div class="card2">
+                    <div class="card-title">
+                    <h2> Email</h2>
+                    <img src="img/duvidas.png" alt="logo para email">
+                    </div>
+                    <p class="text-contact">Entre em contato conosco pelo nosso e-mail! Nossa equipe esta pronta para atendê-lo!</p>
+                    <button class="card-button">Entre em contato</button>
+                </div>
+            </div>
+        </div> 
+        <!--Criando o footer-->
+        <footer class="footer">
+            <div class="contatos">
+            <div class="imgfooter"><img src="img/instagram.png" alt=""><a class="perfil" href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a></div>
+            <div class="imgfooter2"><img src="img/email.png" alt=""><a href="mailto:jmylena.moinho@gmail.com">jmylena.moinho@gmail.com</a></div>
+            </div>
+            <p class="text">&copy; COPYRIGHT FOR TLG</p>
+            <p class="txtTila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
+            <div class="tila"><a href="sitetila.com"><img src="img/logo_latila.png" alt="siteTILA"></a></div>
+        </footer>   
+    </div>
+    <div class="acessibilidade_container">
+        
+        <button onclick="Start()" class="main" id="main">
+            <img src="img/acessibilidade.png" alt="">
+        </button>
+        
+        <div id="botoes">  
+
+            <button id="opcao1" onclick="toggleContrast()">
+                <img  src="img/contraste.png" alt="contraste">
+            </button>
+                
+            <button id="opcao2" onclick="toggleFont()">
+                <img src="img/tamanho-da-fonte.png" alt="tamanho da fonte">
+            </button>
+                
+            <button id="opcao3" onclick="toggleReading()">
+                <img  src="img/modo-de-leitura.png" alt="modo de leitura">
+            </button>
+
+            <button id="opcao4" onclick="topFunction()">
+                <img  src="img/topo.png" alt="voltar ao topo">
+            </button>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <script src="js/script_contraste.js"></script>
+</body>
+</html>

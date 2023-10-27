@@ -1,2 +1,2 @@
 # projeto-tli
-Projetoo integrador no qual iremos desenvolver um site.
+Projeto integrador no qual iremos desenvolver um site.

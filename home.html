@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="carretel.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script_form.js"></script>
+    <script src="js/script_acessibilidade.js"></script>
+    <title>The Leaders of Inclusion</title>
+</head>
+
+<body>
+<div class="container">
+    
+    <div class="container_menu_e_logo">
+        
+    <!-- Início do menu -->
+    <img class="logo" src="img/logo_png.png" alt="logo">
+
+    <header>
+        <nav class="dp-menu">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinos</a>
+                    <ul>
+                        <li><a href="#">Lugares</a></li>
+                        <li><a href="#">Hoteis</a></li>
+                        <li><a href="#">Restaurantes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+        </nav>
+        <div class="btn-contato">
+            <button class="login" role="button">Login</button>
+            <button class="cadastro" role="button">Cadastrar</button>
+        </div>
+
+
+
+    </header>
+    <!-- Fim do menu/header -->
+    </div>
+    <!-- Início do carretel -->
+    <div class="carousel">
+        <button id="prevBtn" class="btn-slide"><img src="img_teste/arrow_left.png" alt=""></button>
+        <div class="carousel-container">
+            <img class="slide" src="img_teste/1.png" alt="Imagem 1">
+            <img class="slide" src="img_teste/2.png" alt="Imagem 2">
+            <img class="slide" src="img_teste/3.png" alt="Imagem 3">
+        </div>
+        <button id="nextBtn" class="btn-slide"><img src="img_teste/arrow_right.png" alt=""></button>
+    </div>
+    <!-- Fim do carretel -->
+
+    <!-- Início do formulario -->
+    <div class="container_form">
+        <h1>Programe sua viagem!</h1>
+        <form>
+            <label for="Ida_e_Volta">Ida e Volta <img src="img/seta-navegar.png" alt="seta vermelha" id="setaIdaeVoltaBaixo" class="seta" onclick="startFormIdaEVolta()">
+                <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaeVoltaCima" class="seta2" onclick="startFormIdaEVolta()"></label>
+
+            <label for="Somente_ida">Somente Ida <img src="img/seta-navegar.png" alt="seta vermelha"  id="setaIdaBaixo" class="seta" onclick="startFormIda()">
+                <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaCima" class="seta2" onclick="startFormIda()"></label>
+        
+            <div id="form_ida_volta">
+                <label for="Ida e Volta">Passageiros </label>
+                <input type="number" id="passageiros" name="passageiros" required>
+
+                <label for="origem">Origem:</label>
+                <input type="text" id="origem" name="origem" required>
+
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+
+                <label for="data_ida">Ida:</label>
+                <input type="date" id="ida" name="ida" required>
+
+                <label for="data_volta">Volta:</label>
+                <input type="date" id="volta" name="volta" required>
+
+                <button type="submit"><a href="estrutura_busca\busca.html">Procurar</a></button>
+            </div>
+            <div id="form_so_ida">
+                <label for="Ida e Volta">Passageiros </label>
+                <input type="number" id="passageiros" name="passageiros" required>
+
+                <label for="origem">Origem:</label>
+                <input type="text" id="origem" name="origem" required>
+
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+
+                <label for="data_so_ida">Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <button type="submit"><a href="estrutura_busca\busca.html">Procurar</a></button>
+            </div>
+        </form>
+    </div>
+<!-- Fim do formulário -->
+
+
+    
+        <!--Criando o footer-->
+        <footer class="footer">
+            <div class="contatos">
+            <div class="imgfooter"><img src="img/instagram.png" alt=""><a class="perfil" href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a></div>
+            <div class="imgfooter2"><img src="img/email.png" alt=""><a href="mailto:jmylena.moinho@gmail.com">jmylena.moinho@gmail.com</a></div>
+            </div>
+            <p class="text">&copy; COPYRIGHT FOR TLG</p>
+            <p class="txtTila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
+            <div class="tila"><a href="sitetila.com"><img src="img/logoLatila.png" alt="siteTILA"></a></div>
+        </footer>   
+    </div>
+
+    <div class="acessibilidade_container">
+        
+        <button onclick="Start()" class="main" id="main">
+            <img src="img/acessibilidade.png" alt="">
+        </button>
+        
+        <div id="botoes">  
+
+            <button id="opcao1" onclick="toggleContrast()">
+                <img  src="img/contraste.png" alt="contraste">
+            </button>
+                
+            <button id="opcao2" onclick="toggleFont()">
+                <img src="img/tamanho-da-fonte.png" alt="tamanho da fonte">
+            </button>
+                
+            <button id="opcao3" onclick="toggleReading()">
+                <img  src="img/modo-de-leitura.png" alt="modo de leitura">
+            </button>
+
+            <button id="opcao4" onclick="topFunction()">
+                <img  src="img/topo.png" alt="voltar ao topo">
+            </button>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+        <script src="js/script_contraste.js"></script>
+
+</body>
+
+</html>

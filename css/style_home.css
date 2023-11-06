@@ -1,0 +1,93 @@
+/* Estilização padrão*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+}
+
+/*criando um display grid a partir da div pai "container"*/ 
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 280px 300px 300px 300px 400px 150px;
+    grid-template-areas: "menu menu menu menu"
+                         "carrossel carrossel carrossel form"
+                         "carrossel carrossel carrossel form "
+                         "about quiz quiz form"
+                         "about quiz quiz ."
+                         "footer footer footer footer" ;
+                        }
+ 
+
+.about-container{
+    grid-area: about;
+    margin-top: 10%;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20%;
+    max-width: 80%;
+    margin: 2% auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+  /*Estilos para os cartões individuais*/
+  .card{
+    border: 1px solid #005BC5;
+    padding: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-title{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+  }
+  .card img{
+    max-width: 35%;
+    max-height: 35%;
+    padding: 2%;
+  }
+  
+  .card p{
+    margin-bottom: 3%;
+    text-align: justify;
+  }
+/*estilizando o card do quiz*/
+.quiz-main{
+  grid-area: quiz;
+}
+
+.quiz-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20%;
+  max-width: 450px;
+  height: 200px;
+  margin: 2% auto;
+  margin-bottom: 2%
+}
+  /*Estilos para os cartões individuais*/
+.quiz{
+  border: 1px solid #005BC5;
+  padding: 5%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quiz-title{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}

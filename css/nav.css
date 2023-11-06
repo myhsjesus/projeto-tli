@@ -1,0 +1,183 @@
+/* Estilização padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*criando o grid area do menu de da logo*/
+.container_menu_e_logo{
+    grid-area: menu;
+}
+
+/* Estilazação da Logo do site*/
+.logo {
+    grid-area: logo;
+    width: 25rem;
+    /* estilizando a largura */
+    margin-left: 46rem;
+    /* adicionando uma margem à esquerda da logo */
+    margin-bottom: -8rem;
+    /* adicionando uma margem abaixo da logo */
+    margin-top: -5rem;
+    /* adicionando uma margem em cima da logo */
+}
+
+/* Estilizando a Menu/Nav/Header do site */
+nav {
+    background-color: #005BC5;
+    border-radius: 10px;
+    width: 50rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 34rem;
+    color: white;
+    transition: .5s;
+    grid-area: menu;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+nav ul li a:hover {
+    color: #FECD23;
+}
+
+/*sub menu*/
+
+nav ul ul {
+    background-color: #005BC5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul {
+    width: 150px
+}
+
+nav ul ul li a {
+    display: block;
+    margin: 0;
+    border: 0;
+}
+
+header .btn-contato {
+    margin-left: 98.5rem;
+    margin-top: -3rem;
+}
+
+/* botões do header */
+
+/* botão de login */
+.login {
+    background-clip: padding-box;
+    background-color: #001449;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: calc(.8rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.login:hover,
+.login:focus {
+    background-color: #294788;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.login:hover {
+    transform: translateY(-1px);
+}
+
+.login:active {
+    background-color: #294788;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+/* botão de cadastro */
+.cadastro {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    width: 100px;
+    padding: calc(.8rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.cadastro:hover,
+.cadastro:focus {
+    background-color: #0A6789;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgb(255, 255, 255);
+}
+
+.cadastro:hover {
+    transform: translateY(-1px);
+}
+
+.cadastro:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .logo {
+        margin-left: 20rem;
+    }
+
+    header {
+        margin-left: -30rem;
+    }
+}

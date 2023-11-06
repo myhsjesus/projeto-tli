@@ -153,9 +153,10 @@ nav ul ul li a {
   color: #005BC5;
   background-color: #00b5fc18;
   font-size: 4.5em;
+  margin-top: 2%;
 }
 
-.title1 {
+.title_lug {
   font-size: 2.5em;
   text-align: center;
   color: #CF0638;
@@ -165,7 +166,7 @@ nav ul ul li a {
 }
 
 
-.title2 {
+.title_hotel {
   font-size: 2.5em;
   text-align: center;
   color: #0a996f;
@@ -174,7 +175,7 @@ nav ul ul li a {
   margin-top: 2%;
 }
 
-.title3 {
+.title_res {
   font-size: 2.5em;
   text-align: center;
   color: #FA6632;
@@ -199,15 +200,19 @@ nav ul ul li a {
 /*tamanho das fotos*/
 .img-card img {
   width: 90%;
-  height: 89%;
+  height: 89%;  
 }
 
 /*Ira centralizar os cards das imagens*/
 
 .img-card {
   text-align: center;
+  margin-bottom: 8%;
 }
 
+.img-card h3{
+  color: #0a6789;
+}
 
 /*Botao lugar*/
 .lug button {
@@ -218,6 +223,7 @@ nav ul ul li a {
   color: white;
   border-radius: 3px;
   margin: 2%;
+
 }
 
 .lug button,

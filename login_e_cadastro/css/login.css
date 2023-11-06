@@ -7,35 +7,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header{
-    position: fixed;
+.background{
     width: 100%;
-    height: 60px;
+    height: 100vh;
+    background-image: url('../img/img12.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home{
+    position: absolute;
+    top: 50%;
+    left: 56%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    z-index: 99;
-    background: transparent;
-}
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
 
-.header .nav a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 17px;
-    margin-left: 20px;
-    font-weight: 600;    
-}
-
-.header .search input{
-    background: transparent;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 2px solid white;
-    padding-left: 10px;
-    right: 100px;
-    outline: none;
-    color: aliceblue;
 }
 
 .login .sign-up{
@@ -62,6 +57,9 @@
     flex-direction: column;
     width: 700px;
     padding: 100px 0;
+    position: relative;
+    backdrop-filter: blur(20px);
+
 }
 
 .content a {
@@ -72,6 +70,12 @@
     font-weight: 700;
     top: -40px;
     left: 80px;
+}
+
+.content h2{
+    font-size: 3.5em;
+    text-align: center;
+    color: #000000;
 }
 .content h3{
     font-size: 2em;
@@ -102,7 +106,8 @@
     width: 450px;
     position: relative;
     padding: 100px 30px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(200px);
+   
 }
 
 .login h2{
@@ -118,6 +123,7 @@
     height: 30px;
     margin-bottom: 40px;
 }
+
 
 .login .input .input1{
     font-size: 16px;
@@ -145,10 +151,62 @@
     bottom: 27px;
     color: #fff;
 }
-
+#input > * {
+    height: 1.3em;
+    float: left;
+  }
+  
+  #input img {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+  }
 .check{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    color: #fff ;
+
+}
+
+.check a{
+    text-decoration: none;
     color: #fff;
+}
+
+.check a:hover{
+    text-decoration: underline;
+}
+
+.login .button{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+
+  button{
+  width: 100%;
+    height: 40px;
+    background-color: rgb(157, 110, 119);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    color: #fff;
+}
+
+button:active{
+    font-size: 25px;
+}
+
+
+.logo img{
+    width: 35%;
+    height: auto;
+    margin-left: 9.3rem;
+    border-radius: 10em;
+    
 }

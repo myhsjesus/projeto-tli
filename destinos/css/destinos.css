@@ -11,8 +11,6 @@ body {
   font-family: Nunito, sans-serif;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  height: 200px;
-
 }
 
 
@@ -39,13 +37,6 @@ nav {
   transition: .5s;
 }
 
-
-
-
-
-
-
-
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -69,7 +60,7 @@ nav ul li a:hover {
   color: #FECD23;
 }
 
-/*sub menu*/
+/*Sub-menu em todas as paginas*/
 nav ul ul {
   background-color: #005BC5;
   border-bottom-left-radius: 10px;
@@ -94,66 +85,74 @@ nav ul ul li a {
 }
 
 
-/*Começo da class head*/
-.head {
-  margin-top: 3%;
-
-}
-
-
-/*Fim da class head*/
-
-
-/*Começo da class sub-menu*/
-
-
-.sub-menu {
-  background-color: #005BC5;
-  color: #fff;
+/*Sub-menu somante na página destinos*/
+#container-sub{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 2%;
-  margin-top: 1%;
-}
+  margin-top: 3%;
+  padding: 30px;
+  background-color: #005bc5;
+  }
+  
+  #container-sub div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  #container-sub div img{
+  max-width: 200px;
+  height: 100px;
+  }
+  
+  .sub-menu a{
+     
+      text-decoration: none;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+   }
+   .hover_sub:hover{
+    border-bottom: 1px solid #ffffff;
+   }
+  
+  
+  #container-sub{
+     display: flex;
+     flex-direction: row;
+     align-items: auto;
+     padding: 30px;
+  }
+  
+  #container-sub div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     margin-top: 2%;
+     flex-grow: 1;
+     flex-basis: 20%;
+     padding: 0 10px;
+  }
+   #container-sub h3 {
+      color: #ffffff;
+      font-size: 1.5em;
+  }
 
-.sub-menu {
-  list-style: none;
-  display: flex;
-}
-
-.sub-menu li {
-  margin-left: 15px;
-}
-
-.sub-menu li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.sub-menu li a:hover {
-  border-bottom: 2px solid #fff;
-}
-
-.sub-menu li img{
-  width: 15%;
-  height: auto;
-}
-
-.sub-img {
-  margin-left: 14rem;
-  font-size: 1.5rem;
-}
-/*Fim da class sub-menu*/
 
 
 /*Estilização das title's (h2)*/
 .title {
   text-align: center;
+  margin-top: 3;
   color: #005BC5;
   background-color: #00b5fc18;
   font-size: 4.5em;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .title_lug {
@@ -175,7 +174,7 @@ nav ul ul li a {
   margin-top: 2%;
 }
 
-.title_res {
+.title_res{
   font-size: 2.5em;
   text-align: center;
   color: #FA6632;
@@ -200,7 +199,7 @@ nav ul ul li a {
 /*tamanho das fotos*/
 .img-card img {
   width: 90%;
-  height: 89%;  
+  height: 89%;
 }
 
 /*Ira centralizar os cards das imagens*/
@@ -287,219 +286,4 @@ nav ul ul li a {
 
 .rest button:hover {
   background-color: #e4a28a;
-}
-
-/*rodapé*/
-.footer {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 55px 65px;
-  background-color: #005bc5;
-  color: #fff;
-  gap: 10px;
-  margin-top: 3%;
-  grid-template-areas:
-    'insta text txt'
-    'email text tila'
-}
-
-.imgfooter {
-  grid-area: insta;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.imgfooter2 {
-  grid-area: email;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.text {
-  grid-area: text;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.txtTila {
-  grid-area: txt;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.tila {
-  grid-area: tila;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgfooter img {
-  max-width: 50px;
-  margin: 1%;
-}
-
-.imgfooter2 img {
-  max-width: 50px;
-  margin: 1%;
-}
-
-.tila img {
-  max-width: 60px;
-  background-color: #005bc5;
-}
-
-.imgfooter a {
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  flex-direction: row;
-}
-
-.imgfooter2 a {
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-}
-
-/*acessibilidade*/
-
-.acessibilidade_container{
-  position: fixed;
-  bottom:10px;
-  right:10px;
-}
-
-#botoes{
-  display: none;
-  flex-direction: column;
-  margin-right: 9px;
-  margin-bottom: 62px;
-  }
-
-#botoes button{
-  margin: 5%;
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  border-radius: 30px;
-  background-color: #0a996f;
-  border: none;
-  font-size: 24px;
-  color: #ffffff; 
-}
-.acessibilidade_container button{ 
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.acessibilidade_container button img{
-  width: 60%;
-  height: 60%;
-}
-
- .main {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: #0a6789;
-  right: 0;
-  bottom: 0;
-}
-
-.acessibilidade_container button:hover,
-.acessibilidade_container button .main:hover{
-  transform: scale(1.1);
-}
-
-/*Contraste*/
-body.high-contrast {
-  color: #fff !important;
-  background-color: #000 !important;
-}
-
-body.high-contrast h1 {
-color: #fff !important;
-background: none;
-}
-  
-body.high-contrast h2 {
-color: #ffffff !important;
-background-color: #005cc584;
-}
-
-.high-contrast p{
-color: #ddd !important;
-}
-
-/*Modo de Leitura*/
-.reading-mode{
-background-color: #fdf9d7 !important;
-}
-
-.reading-mode .footer { 
-color: #fdf9d7 !important;  
-}
-
-.reading-mode button{
-color: #fdf9d7 !important; 
-}
-.reading-mode nav {
-  color: #fdf9d7;
-}
-
-
-/*Aumentar fonte*/
-.font-size {
-  font-size: large;
-}
-/*Responsivel*/
-
-@media(max-width:768px) {
-  .gallery-content {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media(max-width:1500px) {
-  .gallery-content {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-}
-
-@media(max-width:530px) {
-  .gallery-content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media(max-width:768px) {
-  .gallery-content button {
-    height: 10%;
-    widows: 25%;
-  }
-}
-
-@media(max-width:1500px) {
-  .gallery-content button {
-    height: 10%;
-    widows: 25%;
-    bottom: 2%;
-  }
-}
-
-
-@media(max-width:530px) {
-  .gallery-content button {
-    height: 10%;
-    widows: 25%;
-  }
 }

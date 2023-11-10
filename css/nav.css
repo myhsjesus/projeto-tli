@@ -96,9 +96,9 @@ header .btn-contato {
 /* botão de login */
 .login {
     background-clip: padding-box;
-    background-color: #001449;
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    background-color: #005BC5;
+    border-radius: 10px;
+    border: 2px solid #005BC5;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
@@ -114,8 +114,7 @@ header .btn-contato {
 
 .login:hover,
 .login:focus {
-    background-color: #294788;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background-color: #011D5F; 
 }
 
 .login:hover {
@@ -124,16 +123,14 @@ header .btn-contato {
 
 .login:active {
     background-color: #294788;
-    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
 }
 
 /* botão de cadastro */
 .cadastro {
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    border: 2px solid #294788;
+    border-radius: 10px;
     color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
     display: inline-flex;
@@ -155,7 +152,6 @@ header .btn-contato {
 .cadastro:focus {
     background-color: #0A6789;
     border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgb(255, 255, 255);
 }
 
@@ -166,7 +162,6 @@ header .btn-contato {
 .cadastro:active {
     background-color: #F0F0F1;
     border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
 }

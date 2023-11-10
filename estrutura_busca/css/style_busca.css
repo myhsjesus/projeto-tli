@@ -14,70 +14,36 @@ body{
   height: 200px;
    
 }
- 
-h1, h2, h3{
-  font-family:Asap, sans-serif;
-  color:#001449 !important;
-}
 
-/*estilização do header*/
-.container-header{  
-  grid-area: header;
-  padding-top: 2%;
-  display: grid; 
-  grid-template-columns: 10% 80% 5% 5%;  
-  grid-template-rows: 35px 35px;
-  grid-template-areas: '. title contraste img-mao'
-                       '. title contraste img-mao'; 
-}
-
-.title { 
-  grid-area: title; 
+.title button{
+  margin-top: 1%;
+  left: 1%;
+  padding: 10px;
+  max-width: 80px;
+  max-height: 60px;
+  background-color: #001449;
+  border: none;
+  color: white;
+  border-radius: 3px;
   text-align: center;
-} 
-
-.img-mao{
-  grid-area: img-mao;
-  width: 30px;
-  height: 30px;
-  padding-top: 3%;
-}
- 
-.img-mao2{
-  grid-area: img-mao2;
-  width: 30px;
-  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
 }
 
-.img-mao:hover{
-    transform: scale(1.1);
+.title button img{
+  max-width: 35%;
 }
 
-.img-mao2:hover{
-  transform: scale(1.1);
+.title h1{
+  text-align: center;
+  color: #005BC5;
+  background-color: #00b5fc18;
+  font-size: 4.5em;
+  margin-top: 2%;
 }
-
-.contraste{
-  grid-area: contraste;
-  width: 40px;
-  height: 40px;
-}
-
-.contraste2{
-  grid-area: contraste2;
-  width: 40px;
-  height: 40px;
-}
- 
-.contraste:hover{
-     transform: scale(1.1);
-}
-
-.contraste2:hover{
-  transform: scale(1.1);
-}
-
-/*fim do header*/
 
 /*Estilos para o container dos cartões*/
 .card-container{
@@ -85,7 +51,7 @@ h1, h2, h3{
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 5%;
     max-width: 1200px;
-    margin: 2% auto;
+    margin: 5% auto;
     margin-top: 2%;
 }
 /*Estilos para os cartões individuais*/
@@ -105,9 +71,11 @@ h1, h2, h3{
 }
 .card-title{
     grid-area: title;
+    
 }
 .card p{
     grid-area: text;
+    font-size: 1.2em;
 }
 .card img{
   max-width: 600px;
@@ -150,7 +118,7 @@ background-color:#00B4FC ;
     margin-top: 5%;
     display: grid; 
     grid-template-columns: 30% 30% 30%;  
-    grid-template-rows: 55px 65px; 
+    grid-template-rows: 55px 75px; 
     background-color: #005bc5; 
     color: #fff;
     gap: 10px; 
@@ -213,7 +181,7 @@ background-color:#00B4FC ;
     background-color: #005bc5;
 }
 .latila img{
-    max-width: 60px;
+    max-width: 65px;
     background-color: #005bc5;
     padding: 3%;
 }
@@ -228,8 +196,9 @@ background-color:#00B4FC ;
     color: #fff;
     text-align: center;
 }
-.latila a:hover{
-    transform: scale(1.1);
+.latila img:hover{
+  border: 1px solid #fff;
+  border-radius: 50px;
 }
 
 /*Contraste*/

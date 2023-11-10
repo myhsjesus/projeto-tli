@@ -12,38 +12,40 @@
     border-radius: 10px;
     /* Adiciona cantos arredondados com um raio de 5px ao contêiner */
     border: 1px solid #005BC5;
-    padding: 5%;
     /* Adiciona preenchimento interno de 5% */
-    width: 315px;
+    padding-bottom: 5%;
+    width: 45%;
         /* Define a largura máxima do contêiner como 600 pixels */
-    margin-top: 10%;
-    margin-left: 15%;
-    margin-bottom: 20%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 10%;
 }
 
 .container_form h1{
-    padding: 5%;
+    padding: 3%;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    font-size: 40px;
 }
 
 /* Define estilos para o formulário */
 form {
     display: inline-block;
     /* Define o formulário como um bloco de nível de linha */
-    text-align: center;
-    /* Centraliza o texto no formulário */
 }
 
 /* Define estilos para as etiquetas dentro do formulário */
 form label {
     display: block;
     /* Define as etiquetas como blocos de nível de bloco */
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     /* Adiciona margem inferior de 10% às etiquetas */
+    font-size: 20px;
 }
 
 /* Define estilos para as imagens das etiquetas dentro do formulário */
 form label img{
-    max-width: 5%;
+    max-width: 4%;
     /* Define o tamanho das imagens*/
     margin-top: 3%;
     /* Adiciona margem superior de 1% às imagens */
@@ -78,7 +80,7 @@ form input[type="date"],
 form input[type="number"] {
     background-color: #fff;
     /* Define a cor de fundo dos campos como branco (#fff) */
-    padding: 5px;
+    padding: 10px;
     /* Adiciona preenchimento interno de 5px nos campos */
     border-radius: 5px;
     /* Adiciona cantos arredondados com um raio de 5px aos campos */
@@ -98,7 +100,7 @@ form input[type="number"] {
     border-radius: 3px;
     margin-bottom: 2rem;
     width: 100px;
-    height: 25px;
+    height: 50px;
 }
 
 .container_form button,

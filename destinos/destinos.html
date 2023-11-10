@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/destinos.css">
-
+    <link rel="stylesheet" href="css/acessibilidade_destino.css">
+    <link rel="stylesheet" href="css/responsivel_destino.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Destinos e Pacotes</title>
 </head>
 
@@ -24,26 +26,37 @@
                     <li><a href="#restaurante">Restaurantes</a></li>
                 </ul>
             </li>
-            <li><a href="\central_de_ajuda/central.html">Central de Ajuda</a></li>
+            <li><a href="\central_de_ajuda\central.html">Central de Ajuda</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
     <!--Sub-menu-->
-            <h1 class="title">Destinos</h1>
+    <h1 class="title">Destinos</h1>
     
-            <div class="sub-menu">
-
-        <div class="sub-img">
-            <li><a href="#lugar"><img src="img_destinos/lugar.png">Lugares</a></li>
-        </div>
-        <div class="sub-img">
-            <li><a href="#hotel"><img src="img_destinos/hotel.png">Hoteis</a></li>
-        </div>
-        <div class="sub-img">
-            <li><a href="#restaurante"><img src="img_destinos/restaurante.png">Restaurantes</a></li>
-        </div>
-    </div>
+    <section class="sub-menu">
+        <section id="container-sub">
+          <div>
+            <a href="#lugar"><img src="img_destinos/lugar.png" alt="lugar"></a>
+            <div class="hover_sub"><a href="#lugar"><h3>Lugares</h3></div></a></div>
+    
+           </div>
+    
+           <div>
+            <a href="#hotel"><img src="img_destinos/hotel.png" alt="hotel"></a>
+            <div class="hover_sub"><a href="#hotel"><h3>Hotéis</h3></div></a></div>
+    
+           </div>
+         
+           <div>
+            <a href="#restaurante"><img src="img_destinos/restaurante.png" alt="restau"></a>
+            <div class="hover_sub"><a href="#restaurante"><h3>Restaurantes</h3></div></a></div>
+    
+           </div>
+    
+           </div>
+           </section>
+        </section>
 
 
 
@@ -261,8 +274,8 @@
             <div class="img-card">
 
                 <img src="img_destinos/restau5.jpg" alt="ba">
-                <h3></h3>
-                <p></p>
+                <h3>Spoleto - Palmas</h3>
+                <p>“Atendimento rápido, atendentes simpático e eficientes.”</p>
                 <a href="https://www.youtube.com">
                     <button>Link para o endereço</button>
                 </a>
@@ -272,7 +285,8 @@
             <div class="img-card">
 
                 <img src="img_destinos/restau6.jpg" alt="pe">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Choppão - Cuiabá</h3>
+                <p>“Atendimento excelente e com muita simpatia, foi o diferencial desse lugar.”</p>
                 <a href="https://www.youtube.com">
                     <button>Link para o endereço</button>
                 </a>
@@ -282,16 +296,19 @@
         </section>
     </section>
 
-    <!--Rodapé-->
-    <footer class="footer" id="contato">
+     <!--Criando o footer-->
+     <footer class="footer" id="contato">
         <div class="contatos">
-        <div class="imgfooter"><img src="img_destinos/instagram.png" alt=""><a class="perfil" href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a></div>
-        <div class="imgfooter2"><img src="img_destinos/email.png" alt=""><a href="mailto:jmylena.moinho@gmail.com">jmylena.moinho@gmail.com</a></div>
+            <div class="imgfooter"><img src="img_destinos/instagram.png" alt=""><a class="perfil"
+                    href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a>
+            </div>
+            <div class="imgfooter2"><img src="img_destinos/email.png" alt=""><a
+                    href="mailto:theleadersgirls2023@gmail.com">theleadersgirls2023@gmail.com</a></div>
         </div>
-        <p class="text">&copy; COPYRIGHT FOR TLG</p>
-        <p class="txtTila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
-        <div class="tila"><a href="sitetila.com"><img src="img_destinos/logo_latila.png" alt="siteTILA"></a></div>
-    </footer>   
+        <p class="copyright">&copy; COPYRIGHT FOR TLG</p>
+        <p class="txtLatila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
+        <div class="latila"><a href="sitetila.com"><img src="img_destinos/logoLatila.png" alt="siteTILA"></a></div>
+    </footer>  
 
     <!--Acessibilidade-Menu-->
     <div class="acessibilidade_container">

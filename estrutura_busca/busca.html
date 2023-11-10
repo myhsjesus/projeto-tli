@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_busca.css">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <script src="js/script_acessibilidade.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="img/quebraCabeçasTLG.png"/>
     <title>TLI- Sua busca</title>
 </head>
 <body>
      <!--Header-->
      
-     <header class="container-header">
-                
-        <h1 class="title">De acordo com sua busca:</h1>
+     <header class="title">
         
-        <img class="img-mao2" src="img/palma-da-mao-branca.png" alt="mao-branca">
-
-        <img class="img-mao" src="img/palma-da-mao.png" alt="mao-preta">
-
-        <img src="img/contraste.png" class="contraste2" alt="Contraste-branco" onclick="toggleContrast()">
-
-        <img src="img/contraste2.png" class="contraste" alt="Contraste-preto" onclick="toggleContrast()">
+        <button><a href="\home.html"><img src="img/seta-esquerda.png" alt="seta para a esquerda"></a></button> 
+        
+        <h1>De acordo com sua busca:</h1>
     
     </header>
     <!-- Fim do Header-->
@@ -70,10 +66,45 @@
         </div>
         <p class="text">&copy; COPYRIGHT FOR TLG</p>
         <p class="txtLatila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
-        <div class="latila"><a href="sitelatila.com"><img src="img/logo_latila.png" alt="siteLATILA"></a></div>
+        <div class="latila"><a href="sitelatila.com"><img src="img/logoLatila.png" alt="siteLATILA"></a></div>
     </footer>
     <!-- fim do rodapé -->
-    <!-- link para o script -->
+
+    <div class="acessibilidade_container">
+
+        <button onclick="Start()" class="main" id="main">
+            <img src="img/acessibilidade.png" alt="">
+        </button>
+
+        <div id="botoes">
+
+            <button id="opcao1" onclick="toggleContrast()">
+                <img src="img/contraste.png" alt="contraste">
+            </button>
+
+            <button id="opcao2" onclick="toggleFont()">
+                <img src="img/tamanho-da-fonte.png" alt="tamanho da fonte">
+            </button>
+
+            <button id="opcao3" onclick="toggleReading()">
+                <img src="img/modo-de-leitura.png" alt="modo de leitura">
+            </button>
+
+            <button id="opcao4" onclick="topFunction()">
+                <img src="img/topo.png" alt="voltar ao topo">
+            </button>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="js/script_contraste.js"></script>
 </body>
 </html>

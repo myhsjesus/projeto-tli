@@ -310,6 +310,11 @@ color: #000;
    border-bottom: 2px solid #fff;
 }
 
+.tila img:hover{
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
 
 .acessibilidade_container{
   position: fixed;

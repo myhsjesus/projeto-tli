@@ -92,6 +92,22 @@ form input[type="number"] {
     /* Adiciona margem inferior de 20px aos campos */
 }
 
+/* Define estilos para os campos de seleção */
+form select {
+    background-color: #fff;
+    /* Define a cor de fundo dos campos como branco (#fff) */
+    padding: 10px;
+    /* Adiciona preenchimento interno de 5px nos campos */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados com um raio de 5px aos campos */
+    border: 1px solid #000;
+    /* Define uma borda de 1px sólida em torno dos campos */
+    width: 100%;
+    /* Define a largura dos campos como 100% da largura disponível */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior de 20px aos campos */
+}
+
 /* Define estilos para o botão de envio */
 .container_form button {
     color: #fff;

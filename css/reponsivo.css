@@ -1,0 +1,39 @@
+@media screen and (max-width: 1200px) {
+
+    /* responsivo menu */
+    .menu_logo {
+        margin-left: 32rem;
+    }
+
+    .dp-menu {
+        margin-left: -2rem;
+        width: 42rem;
+    }
+
+    .menu_logo .logo {
+        margin-left: -32rem;
+    }
+
+    .icon_avatar {
+        margin-left: 20rem;
+        margin-top: -3.5rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .dp-menu {
+        margin-left: -2rem;
+        width: 15rem;
+        height: 12rem;
+    }
+
+    nav ul li a {
+        padding: 0;
+        display: flex;
+        align-items: flex-start ;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}

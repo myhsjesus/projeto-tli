@@ -40,3 +40,4 @@ function startFormIda() {
         seta.style.display = "inline-block";
     }
 } 
+

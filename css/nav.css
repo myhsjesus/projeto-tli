@@ -9,18 +9,21 @@
 .container_menu_e_logo{
     grid-area: menu;
 }
+.menu_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Estilazação da Logo do site*/
 .logo {
     grid-area: logo;
     width: 25rem;
     /* estilizando a largura */
-    margin-left: 46rem;
-    /* adicionando uma margem à esquerda da logo */
-    margin-bottom: -8rem;
-    /* adicionando uma margem abaixo da logo */
     margin-top: -5rem;
     /* adicionando uma margem em cima da logo */
+    margin-bottom: -5rem;
 }
 
 /* Estilizando a Menu/Nav/Header do site */
@@ -32,10 +35,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 34rem;
     color: white;
     transition: .5s;
-    grid-area: menu;
 }
 
 nav ul {
@@ -86,9 +87,10 @@ nav ul ul li a {
     border: 0;
 }
 
-header .btn-contato {
-    margin-left: 98.5rem;
+.btn-contato {
+    right: 7%;
     margin-top: -3rem;
+    position: absolute;
 }
 
 /* botões do header */
@@ -164,15 +166,4 @@ header .btn-contato {
     border-color: rgba(0, 0, 0, 0.15);
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .logo {
-        margin-left: 20rem;
-    }
-
-    header {
-        margin-left: -30rem;
-    }
 }

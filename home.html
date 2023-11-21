@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/acessibilidade.css">
+    <link rel="stylesheet" href="css/responsivel_home.css">
     <script src="js/script_form.js"></script>
     <script src="js/script_acessibilidade.js"></script>
     <title>The Leaders of Inclusion</title>
@@ -20,7 +21,8 @@
     <div class="container">
 
         <div class="container_menu_e_logo">
-
+            <div class="menu_logo">
+                
             <!-- Início do menu -->
             <img class="logo" src="img/logo_png.png" alt="logo">
 
@@ -28,18 +30,20 @@
                 <nav class="dp-menu">
                     <ul class="menu">
                         <li><a href="#">Home</a></li>
-                        <li><a href="destinos/destinos.html">Destinos</a>
+                        <li><a href="#">Destinos</a>
                             <ul>
-                                <li><a href="destinos/destinos.html#lugar">Lugares</a></li>
-                                <li><a href="destinos/destinos.html#hotel">Hoteis</a></li>
-                                <li><a href="destinos/destinos.html#restaurante">Restaurantes</a></li>
+                                <li><a href="#">Lugares</a></li>
+                                <li><a href="#">Hoteis</a></li>
+                                <li><a href="#">Restaurantes</a></li>
                             </ul>
                         </li>
-                        <li><a href="central_de_ajuda/central.html">Central de Ajuda</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
 
                 </nav>
+            </div>
+            
                 <div class="btn-contato">
                     <button class="login" role="button">Login</button>
                     <button class="cadastro" role="button">Cadastrar</button>
@@ -75,56 +79,65 @@
 
 
 
-        <!-- Início do formulario -->
-        <div class="container_form">
-            <h1>Programe sua viagem!</h1>
-            <form id="form">
-                <label for="Ida_e_Volta">Ida e Volta <img src="img/seta-navegar.png" alt="seta vermelha"
-                        id="setaIdaeVoltaBaixo" class="seta" onclick="startFormIdaEVolta()">
-                    <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaeVoltaCima" class="seta2"
-                        onclick="startFormIdaEVolta()"></label>
+<!-- Início do formulario -->
+<div class="container_form">
+    <h1>Programe sua viagem!</h1>
+    <form action="">
+        <label for="Ida_e_Volta">Ida e Volta <img src="img/seta-navegar.png" alt="seta vermelha"
+                id="setaIdaeVoltaBaixo" class="seta" onclick="startFormIdaEVolta()">
+            <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaeVoltaCima" class="seta2"
+                onclick="startFormIdaEVolta()"></label>
 
-                <label for="Somente_ida">Somente Ida <img src="img/seta-navegar.png" alt="seta vermelha"
-                        id="setaIdaBaixo" class="seta" onclick="startFormIda()">
-                    <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaCima" class="seta2"
-                        onclick="startFormIda()"></label>
+        <label for="Somente_ida">Somente Ida <img src="img/seta-navegar.png" alt="seta vermelha"
+                id="setaIdaBaixo" class="seta" onclick="startFormIda()">
+            <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaCima" class="seta2"
+                onclick="startFormIda()"></label>
 
-                <div id="form_ida_volta">
-                    <label for="Ida e Volta">Passageiros </label>
-                    <input type="number" id="passageiros" name="passageiros" required>
+        <div id="form_ida_volta">
+            <label for="Ida e Volta">Passageiros </label>
+            <input type="number" id="passageiros" name="passageiros" required>
+            
+            <label for="data_ida">Ida:</label>
+            <input type="date" id="ida" name="ida" required>
 
-                    <label for="origem">Origem:</label>
-                    <input type="text" id="origem" name="origem" required>
+            <label for="data_volta">Volta:</label>
+            <input type="date" id="volta" name="volta" required>
 
-                    <label for="destino">Destino:</label>
-                    <input type="text" id="destino" name="destino" required>
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" required>
 
-                    <label for="data_ida">Ida:</label>
-                    <input type="date" id="ida" name="ida" required>
+            <label for="destino">Destino:</label>
+            <select name="destino" id="destino" required>
+                <option>Selecione</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="PR">Paraná</option>
+            </select>
 
-                    <label for="data_volta">Volta:</label>
-                    <input type="date" id="volta" name="volta" required>
-
-                    <button type="submit"><a href="estrutura_busca\busca.html">Procurar</a></button>
-                </div>
-                <div id="form_so_ida">
-                    <label for="Ida e Volta">Passageiros </label>
-                    <input type="number" id="passageiros" name="passageiros" required>
-
-                    <label for="origem">Origem:</label>
-                    <input type="text" id="origem" name="origem" required>
-
-                    <label for="destino">Destino:</label>
-                    <input type="text" id="destino" name="destino" required>
-
-                    <label for="data_so_ida">Data:</label>
-                    <input type="date" id="data" name="data" required>
-
-                    <button type="submit"><a href="estrutura_busca\busca.html">Procurar</a></button>
-                </div>
-            </form>
+            <button type="button" onclick="buscarPacotes(destino.value)">Buscar</button>
         </div>
-        <!-- Fim do formulário -->
+        <div id="form_so_ida">
+            <label for="Ida e Volta">Passageiros </label>
+            <input type="number" id="passageiros" name="passageiros" required>
+
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" required>
+
+            <label for="data_so_ida">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="destino2">Destino:</label>
+            <select name="destino2" id="destino2" required>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="PR">Paraná</option>
+            </select>
+
+            <button type="button" onclick="buscarPacotesIda(destino2.value)">Buscar</button>
+        </div>
+    </form>
+</div>
+<!-- Fim do formulário -->
         <div class="about-container">
 
             <div class="card-container" id="card">
@@ -207,7 +220,7 @@
             </button>
         </div>
     </div>
-    <div vw class="enabled">
+    <div vw class="enabled libras">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
@@ -218,7 +231,8 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <script src="js/script_contraste.js"></script>
-    <script src="js/carretel.js"></script>
+    <script src="js/carretel.js"></script>  
+    <script src="js/script_buscar.js"></script>
 
 </body>
 

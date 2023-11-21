@@ -1,0 +1,229 @@
+@media screen and (max-width: 1280px) {
+
+    .menu_logo {
+        margin-left: 30rem;
+    }
+
+    .dp-menu {
+        margin-left: -32rem;
+        width: 50rem;
+    }
+
+    .menu_logo .logo {
+        margin-left: -32rem;
+    }
+
+    .logo {
+        width: 20rem;
+        /* estilizando a largura */
+    }
+
+    .btn-contato {
+        margin-top: -5%;
+        margin-right: -5px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .login {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .cadastro {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    /* Define o estilo para o contêiner do formulário */
+    .container_form {
+        width: 50%;
+        /* Define a largura máxima do contêiner como 600 pixels */
+    }
+
+    .container {
+        grid-template-rows: 300px 300px 300px 300px 400px 150px 350px 157px;
+    }
+
+    .card-container {
+        margin-left: 14%;
+    }
+
+    .quiz-container {
+        margin-left: 30%;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        top: -5%;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .menu_logo .logo {
+        margin-right: 50%;
+    }
+
+    .dp-menu {
+        margin-right: 50%;
+        width: 50rem;
+    }
+
+    .logo {
+        width: 15rem;
+        /* estilizando a largura */
+    }
+
+    .dp-menu {
+        margin-left: -2rem;
+        width: 12rem;
+        height: 10rem;
+    }
+
+    nav ul li a {
+        padding: 0%;
+        padding-top: 2%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    nav ul ul {
+        background-color: #005BC5;
+        display: none;
+        position: absolute;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+        background-color: #005BC5;
+    }
+
+    .btn-contato {
+        margin-top: -45%;
+        margin-right: -6%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .login {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 10%;
+    }
+
+    .cadastro {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 10%;
+        width: 60px;
+    }
+
+    /* Define o estilo para o contêiner do formulário */
+    .container_form {
+        width: 50%;
+        /* Define a largura máxima do contêiner como 600 pixels */
+    }
+
+    .container {
+        grid-template-rows: 300px 400px 500px 550px 350px 157px;
+        grid-template-areas: "menu menu menu menu"
+            "carrossel carrossel carrossel carrossel"
+            "quiz quiz quiz quiz"
+            "form form form form"
+            "about about about about"
+            "footer footer footer footer";
+
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2%;
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    .card {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .quiz-container {
+        margin-top: -60%;
+        margin-left: 10%;
+        margin-right: 0%;
+        max-width: 80%;
+        height: 300px;
+    }
+
+    /* Define o estilo para o contêiner do formulário */
+    .container_form {
+        margin-left: 15%;
+        width: 70%;
+        margin-top: -30%;
+    }
+
+    .container_form h1 {
+        font-size: 25px;
+        padding: 10%;
+    }
+
+    form label {
+        font-size: 15px;
+    }
+
+    /* Define estilos para os campos de entrada de texto e senha */
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="number"] {
+        padding: 5px;
+        /* Adiciona preenchimento interno de 5px nos campos */
+        width: 100%;
+        /* Define a largura dos campos como 100% da largura disponível */
+    }
+
+    /* Define estilos para os campos de seleção */
+    form select {
+        padding: 5px;
+        /* Adiciona preenchimento interno de 5px nos campos */
+        width: 100%;
+        /* Define a largura dos campos como 100% da largura disponível */
+    }
+
+    /* Define estilos para o botão de envio */
+    .container_form button {
+        width: 50px;
+        height: 25px;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        top: -40%;
+        max-width: 100%;
+    }
+
+    .acessibilidade_container{
+        position: fixed;
+        bottom:10px;
+        right:10px;
+      }
+      
+      #botoes{
+        display: none;
+        flex-direction: column;
+        margin-right: 9px;
+        margin-bottom: 62px;
+        }
+
+}

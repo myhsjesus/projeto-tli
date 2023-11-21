@@ -1,3 +1,4 @@
+
 /*montando o style footer*/
 .footer { 
     grid-area: footer;/*criando o grid area do footer*/
@@ -17,12 +18,14 @@
     flex-direction: row;
     align-items: center;
     padding-top: 5%;
+    padding-left: 2%;
 }
 .imgfooter2{
     grid-area: email;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-left: 2%;
 }
 .copyright{
     grid-area: copyright;

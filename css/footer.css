@@ -1,6 +1,6 @@
 
 /*montando o style footer*/
-.footer { 
+footer { 
     grid-area: footer;/*criando o grid area do footer*/
     margin-bottom: -1.4rem;
     display: grid; 

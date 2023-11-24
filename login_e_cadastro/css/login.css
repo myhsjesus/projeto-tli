@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-.background{
+.background {
     width: 100%;
     height: 100vh;
     background-image: url('../img/img12.png');
@@ -16,7 +15,7 @@
 
 }
 
-.home{
+.home {
     position: absolute;
     top: 50%;
     left: 56%;
@@ -33,26 +32,26 @@
 
 }
 
-.login .sign-up{
+.login .sign-up {
     display: flex;
     justify-content: center;
 }
 
-.login .sign-up a{
+.login .sign-up a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
 }
 
-.login .sign-up p{
+.login .sign-up p {
     color: #fff;
 }
 
-.sign-up a:hover{
+.sign-up a:hover {
     text-decoration: underline;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -63,7 +62,7 @@
 }
 
 .content a {
-    position: relative ;
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-size: 3em;
@@ -72,60 +71,56 @@
     left: 80px;
 }
 
-.content h2{
+.content h2 {
     font-size: 3.5em;
     text-align: center;
     color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
-.content h3{
+
+.content h3 {
     font-size: 2em;
     text-align: center;
     color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.content pre{
+.content pre {
     margin-top: 20px;
     text-align: center;
-    font-size: 1em;
+    font-size: 2rem;
     color: #fff;
+    background-color: #fa6632;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.content .icon{
-    margin-top: 20px;
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center;
-}
 
-.content .icon i{
-    margin-left: 20px;
-    color: #fff;
-}
 
-.login{
+.login {
     width: 450px;
     position: relative;
     padding: 100px 30px;
     backdrop-filter: blur(200px);
-   
+
 }
 
-.login h2{
+.login h2 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.login .input{
-    position:relative;
+.login .input {
+    position: relative;
     width: 100%;
     height: 30px;
     margin-bottom: 40px;
 }
 
 
-.login .input .input1{
+.login .input .input1 {
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -140,56 +135,41 @@
     height: 100%;
 }
 
-::placeholder{
+::placeholder {
     color: #fff;
     font-size: 18px;
 }
 
-.login .input i{
+.login .input i {
     position: relative;
     right: -370px;
     bottom: 27px;
     color: #fff;
 }
-#input > * {
+
+#input>* {
     height: 1.3em;
     float: left;
-  }
-  
-  #input img {
+}
+
+#input img {
     cursor: pointer;
     position: absolute;
     right: 5px;
     bottom: 15px;
-  }
-.check{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    color: #fff ;
-
 }
 
-.check a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.check a:hover{
-    text-decoration: underline;
-}
-
-.login .button{
+.login .button {
     width: 100%;
     height: 40px;
     margin-bottom: 15px;
-  }
+}
 
 
-  button{
-  width: 100%;
+button {
+    width: 100%;
     height: 40px;
-    background-color: rgb(157, 110, 119);
+    background-color: #43b704;
     border: none;
     outline: none;
     font-size: 20px;
@@ -198,15 +178,41 @@
     color: #fff;
 }
 
-button:active{
+button:active {
     font-size: 25px;
 }
 
 
-.logo img{
+.logo img {
     width: 35%;
     height: auto;
     margin-left: 9.3rem;
     border-radius: 10em;
-    
+
+}
+.logo{
+    display:flex ;
+}
+
+.logo-contraste img {
+    width: 35%;
+    height: auto;
+    margin-left: 9.3rem;
+    border-radius: 10em;
+
+}
+.logo-contraste{
+    display: none;
+}
+
+.dica{
+    display: none;
+    margin-top: -2rem;
+    margin-bottom: 0.9rem;
+    margin-left: 1.5rem;
+}
+
+.dica p{
+    color: rgb(171, 3, 3);
+    font-size: 17px;
 }

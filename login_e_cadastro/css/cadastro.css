@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .background {
@@ -56,33 +56,26 @@
 .content h2 {
     font-size: 3.5em;
     text-align: center;
-    color: #00050a;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content h3 {
     font-size: 2em;
     text-align: center;
     color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*fonte para usar nas pags*/
 }
 
 .content pre {
     margin-top: 20px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.75em;
     color: #ffffff;
+    background-color: #d75413;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.content .icon {
-    margin-top: 20px;
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center;
-}
-
-.content .icon i {
-    margin-left: 20px;
-    color: #fff;
-}
 
 .login {
     width: 450px;
@@ -97,7 +90,10 @@
     text-align: center;
     margin-bottom: 20px;
     color: #fff;
+    
 }
+
+
 
 .login .input {
     position: relative;
@@ -122,8 +118,14 @@
     height: 100%;
 }
 
+.login .input #input1:valid{
+     border-bottom: 2px solid green;
+}
+
+
+
 ::placeholder {
-    color: #ffffff82;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -143,7 +145,7 @@
     cursor: pointer;
     position: absolute;
     right: 5px;
-    bottom: -10px;
+    bottom: 15px;
 }
 
 
@@ -174,7 +176,7 @@
 button {
     width: 100%;
     height: 40px;
-    background-color: rgb(157, 110, 119);
+    background-color: #43b704;
     border: none;
     outline: none;
     font-size: 20px;
@@ -189,11 +191,28 @@ button:active {
 
 
 .logo {
+    display: flex;
     width: 35%;
     height: auto;
-    margin-left: 14.2rem;
+    margin-left: 14.3rem;
+    margin-bottom: 3.77rem;
     border-radius: 10em;
+    margin-top: -2.5rem;
 }
+
+
+.logo-contraste{
+    width: 35%;
+    height: auto;
+    margin-left: 14.3rem;
+    margin-bottom: 3.77rem;
+    border-radius: 10em;
+    margin-top: -2.5rem;
+    display: none;
+}
+
+
+
 
 
 

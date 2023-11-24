@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 /* Estilazação da Logo do site*/
@@ -37,6 +38,7 @@ nav {
     justify-content: center;
     color: white;
     transition: .5s;
+    grid-area: menu;
 }
 
 nav ul {
@@ -166,4 +168,15 @@ nav ul ul li a {
     border-color: rgba(0, 0, 0, 0.15);
     color: rgba(0, 0, 0, 0.65);
     transform: translateY(0);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .logo {
+        margin-left: 20rem;
+    }
+
+    header {
+        margin-left: -30rem;
+    }
 }

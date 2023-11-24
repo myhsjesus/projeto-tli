@@ -1,0 +1,189 @@
+/*Estilização para os recursos de acessibilidade*/
+
+.acessibilidade_container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#botoes {
+  display: none;
+  flex-direction: column;
+  margin-right: 9px;
+  margin-bottom: 62px;
+}
+
+#botoes button {
+  margin: 5%;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #0a996f;
+  border: 0.5px solid #0000008a;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.acessibilidade_container button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 0.5px solid #000;
+}
+
+.acessibilidade_container button img {
+  width: 60%;
+  height: 60%;
+}
+
+.main {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #0a6789;
+  right: 0;
+  bottom: 0;
+}
+
+.acessibilidade_container button:hover,
+.acessibilidade_container button .main:hover {
+  transform: scale(1.1);
+}
+
+/*Contraste*/
+body.high-contrast .background {
+  background-image: url('../img/img13.png');
+}
+body.high-contrast .logo{
+  display: none;
+}
+
+body.high-contrast .logo-contraste{
+  display: flex;
+}
+body.high-contrast h2 {
+  color: #000000 !important;
+}
+
+body.high-contrast h3 {
+  color: #000000 !important;
+}
+
+body.high-contrast pre {
+  color: #000000 !important;
+}
+
+body.high-contrast .input1::placeholder {
+  color: #000000 !important;
+}
+
+body.high-contrast .input1 {
+  border-bottom: 2px solid #000000 !important;
+}
+
+body.high-contrast .title {
+  color: #fff !important;
+  background: none;
+}
+
+body.high-contrast .title1 {
+  color: #ffffff !important;
+  background-color: #005cc584;
+}
+
+body.high-contrast button {
+  color: #000000 !important;
+}
+
+body.high-contrast .input img {
+  color: #000000 !important;
+}
+
+.high-contrast p {
+  color: #ddd !important;
+}
+
+.high-contrast .container_form {
+  color: #fff !important;
+  background-color: #000 !important;
+  /* Define a cor de fundo do contêiner como branco (#fff) */
+  border: 1px solid #005BC5 !important;
+}
+
+body.high-contrast form input[type="text"] {
+  background-color: #000 !important;
+  /* Define a cor de fundo dos campos como branco (#000) */
+  border: 1px solid #fff !important;
+  /* Define uma borda de 1px sólida em torno dos campos */
+}
+
+body.high-contrast form input[type="number"] {
+  background-color: #000 !important;
+  /* Define a cor de fundo dos campos como branco (#000) */
+  border: 1px solid #fff !important;
+  /* Define uma borda de 1px sólida em torno dos campos */
+  color: #fff !important;
+}
+
+body.high-contrast form input[type="date"] {
+  background-color: #000;
+  /* Define a cor de fundo dos campos como branco (#000) */
+  border: 1px solid #fff;
+  /* Define uma borda de 1px sólida em torno dos campos */
+  color: #fff;
+}
+
+/*Modo de Leitura*/
+body.reading-mode .background {
+  background-image: url('../img/img14.png');
+}
+
+.reading-mode .footer {
+  color: #fdf9d7 !important;
+}
+
+.reading-mode button {
+  color: #fdf9d7 !important;
+}
+
+.reading-mode nav {
+  color: #fdf9d7 !important;
+}
+
+.reading-mode .cadastro {
+  color: #000 !important;
+}
+
+.reading-mode .container_form {
+  background-color: #fdf9d7 !important;
+}
+
+.reading-mode form input[type="text"] {
+  background-color: #fdf9d7 !important;
+}
+
+.reading-mode form input[type="number"] {
+  background-color: #fdf9d7 !important;
+}
+
+.reading-mode form input[type="date"] {
+  background-color: #fdf9d7 !important;
+}
+
+/*Aumentar fonte*/
+.font-size {
+  font-size: large;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .logo {
+    margin-left: 20rem;
+  }
+
+  header {
+    margin-left: -30rem;
+  }
+}

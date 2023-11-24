@@ -24,7 +24,7 @@ const pacotes = {
     },
     {
       name: 'São Sebastião',
-      img: 'img_teste/são_sebastião.jpg',
+      img: 'img_teste/sao_sebastiao.jpg',
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
     },
     {

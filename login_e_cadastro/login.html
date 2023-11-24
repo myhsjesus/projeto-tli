@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/acessibilidade-login.css">
+    <link rel="stylesheet" href="css/resposivo_login.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>login</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -16,42 +18,75 @@
     <section class="home">
         <div class="content">
             <a href="img/logo2.png" class="logo"><img src="img/logo2.png" alt=""></a>
+            <a href="img/contraste-logo.png" class="logo-contraste"><img src="img/contraste-logo.png" alt=""></a>
             <h2>BEM VINDO</h2>
             <h3>THE LEADERS OF INCLUSION</h3>
-            <pre>Viajar é para todos!</pre>
-            <div class="icon">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-x"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
+            <pre>VIAJAR É PARA TODOS!</pre>
+
 
         </div>
+
         <div class="login">
-            <h2>Entrar</h2>
-            <div class="input "> 
-                <input type="text" class="input1 " placeholder="Email" required>
-                
+            <h2>ENTRAR</h2>
+            <div class="input ">
+                <input type="text" id="usuario" class="input1 " placeholder="Email ou usuário" required>
+
             </div>
             <div class="input" id="input">
-                <input type="password" class="input1" placeholder="Senha" required>
+                <input type="password" id="senha" class="input1" placeholder="Senha" required>
                 <img src="img/olho.png" alt="">
             </div>
-            <div class="check">
-                <a href="#">Esqueceu sua senha?Clique aqui para recuperar</a>
+            <div class="dica">
+                <p>Senha e/ou usuário incorretos. Tente novamente!</p>
             </div>
             <div class="button">
-                <button class="btn">Entrar</button>
+                <button type="button" class="btn"
+                        onclick="login()">Entrar</button>
             </div>
             <div class="sign-up">
-                <p>Não tem uma conta?</p>
-                <a href="#">Inscrever-se</a>
+                <p>Não tem uma conta? <a href="cadastro.html">Inscrever-se</a></p>
             </div>
 
         </div>
 
     </section>
+
+    <div class="acessibilidade_container">
+
+        <button onclick="Start()" class="main" id="main">
+            <img src="img/acessibilidade.png" alt="">
+        </button>
+
+        <div id="botoes">
+
+            <button id="opcao1" onclick="toggleContrast()">
+                <img src="img/contraste.png" alt="contraste">
+            </button>
+
+            <button id="opcao2" onclick="toggleFont()">
+                <img src="img/tamanho-da-fonte.png" alt="tamanho da fonte">
+            </button>
+
+            <button id="opcao3" onclick="toggleReading()">
+                <img src="img/modo-de-leitura.png" alt="modo de leitura">
+            </button>
+
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="js/script_contraste.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/script_contraste.js"></script>
 </body>
 
 </html>

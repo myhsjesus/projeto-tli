@@ -1,7 +1,6 @@
 @media screen and (max-width: 1200px) {
 
 
-
     /* responsivo menu */
     .menu_logo {
         margin-left: 32rem;
@@ -16,9 +15,10 @@
         margin-left: -32rem;
     }
 
-    .icon_avatar {
-        margin-left: 20rem;
-        margin-top: -3.5rem;
+    .btn-contato {
+        display: flex;
+        flex-direction: row;
+        margin-right: -5rem;
     }
 
     /* fim do menu*/
@@ -126,9 +126,11 @@
         line-height: -1rem;
     }
 
-    .icon_avatar {
-        margin-left: 4rem;
-        margin-top: -7rem;
+    .btn-contato {
+        display: flex;
+        flex-direction: column;
+        margin-top: -8rem;
+        margin-right: 2rem;
     }
 
     /* fim menu */
@@ -196,7 +198,7 @@
 
     body {
         height: 280vh;
-        
+
     }
 
     /* responsivo menu */
@@ -276,7 +278,7 @@
     .quiz-container {
         margin-top: -4rem;
         width: 18rem;
-        margin-left: 41%;
+        margin-left: 50%;
     }
 
     .quiz-container h2 {
@@ -306,8 +308,8 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 4rem 4rem 3rem;
         grid-template-areas: 'insta txt'
-                             'email latila'
-                             'copyright copyright';
+            'email latila'
+            'copyright copyright';
     }
 
 }

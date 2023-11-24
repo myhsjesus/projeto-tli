@@ -20,6 +20,7 @@
     height: 48px;
     border-radius: 30px;
     background-color: #0a996f;
+    border: 0.5px solid #0000008a;
     border: none;
     font-size: 24px;
     color: #ffffff; 
@@ -28,6 +29,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    border: 0.5px solid #000;
   }
   .acessibilidade_container button img{
     width: 60%;
@@ -69,6 +71,10 @@
   color: #ddd !important;
   }
   
+  body.high-contrast .img-card h3 {
+    color: #17f9ff !important;
+    
+    }
   /*Modo de Leitura*/
   .reading-mode{
   background-color: #fdf9d7 !important;

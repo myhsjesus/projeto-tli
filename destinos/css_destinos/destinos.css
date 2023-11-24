@@ -9,81 +9,10 @@
 /*corpo*/
 body {
   font-family: Nunito, sans-serif;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  color: #000000;
+  background-color: #ffffff;
+
 }
-
-
-/*menu*/
-
-
-.logo {
-  width: 25rem;
-  margin-left: 44rem;
-  margin-bottom: -8rem;
-  margin-top: -5rem;
-}
-
-nav {
-  background-color: #005BC5;
-  border-radius: 10px;
-  width: 50rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 34rem;
-  color: white;
-  transition: .5s;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  position: relative;
-}
-
-nav ul li a {
-  color: var(--cor-primaria);
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-nav ul li a:hover {
-  color: #FECD23;
-}
-
-/*Sub-menu em todas as paginas*/
-nav ul ul {
-  background-color: #005BC5;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: none;
-  left: 0;
-  position: absolute;
-}
-
-nav ul li:hover ul {
-  display: block;
-}
-
-nav ul ul {
-  width: 150px
-}
-
-nav ul ul li a {
-  display: block;
-  margin: 0;
-  border: 0;
-}
-
 
 /*Sub-menu somante na página destinos*/
 #container-sub{
@@ -202,7 +131,7 @@ nav ul ul li a {
   height: 89%;
 }
 
-/*Ira centralizar os cards das imagens*/
+/*Ira centralizar os  textos dos cards das imagens*/
 
 .img-card {
   text-align: center;
@@ -287,3 +216,85 @@ nav ul ul li a {
 .rest button:hover {
   background-color: #e4a28a;
 }
+
+/*rodapé*/
+.footer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 55px 65px;
+  background-color: #005dc7;
+  color: #fff;
+  gap: 10px;
+  margin-top: 3%;
+  grid-template-areas:
+    'insta text txt'
+    'email text tila'
+}
+
+.imgfooter {
+  grid-area: insta;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.imgfooter2 {
+  grid-area: email;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.text {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.txtTila {
+  grid-area: txt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tila {
+  grid-area: tila;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgfooter img {
+  max-width: 50px;
+  margin: 1%;
+}
+
+.imgfooter2 img {
+  max-width: 50px;
+  margin: 1%;
+}
+
+.tila img {
+  max-width: 60px;
+  background-color: #005bc5;
+}
+
+.imgfooter a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  flex-direction: row;
+}
+
+.imgfooter2 a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+

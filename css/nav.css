@@ -115,7 +115,10 @@ nav ul ul li a {
     touch-action: manipulation;
     vertical-align: baseline;
 }
-
+.login a{
+    text-decoration: none;
+    color: #fff;
+}
 .login:hover,
 .login:focus {
     background-color: #011D5F; 
@@ -135,7 +138,7 @@ nav ul ul li a {
     background-color: #fff;
     border: 2px solid #294788;
     border-radius: 10px;
-    color: rgba(0, 0, 0, 0.85);
+    color: #000000d9;
     cursor: pointer;
     display: inline-flex;
     font-size: 16px;
@@ -150,6 +153,11 @@ nav ul ul li a {
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: baseline;
+}
+
+.cadastro a{
+    text-decoration: none;
+    color: #000000d9;
 }
 
 .cadastro:hover,

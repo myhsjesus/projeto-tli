@@ -9,7 +9,7 @@ function suggest(destino){
             destino1:{
               name: 'Copacabana',
               img : 'img_teste/lugar1.jpg',
-              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "  
+              text: "A cidade maravilhosa também é uma cidade inclusiva! Aproveite a beleza deste destino com quem você ama! "  
             },
             destino2:{
                 name: 'Copacabana',

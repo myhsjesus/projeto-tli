@@ -3,46 +3,46 @@ const pacotes = {
     {
       name: 'Copacabana',
       img: 'img_teste/copacabana.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "A cidade maravilhosa também é uma cidade inclusiva! Aproveite a beleza deste destino com quem você ama! "
     },
     {
       name: 'Paraty',
       img: 'img_teste/paraty.jfif',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Um lugar de belas paisagens, verdadeiro paraíso na Terra. Suas férias merecem Paraty! "
     },
     {
       name: 'Ipanema',
       img: 'img_teste/ipanema.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: '"Olha que coisa que coisa mais linda, mais cheia de graça" Tom Jobim não errou ao escrever esta frase, até porque, além de linda, Ipanema ainda é inclusiva!'
     }
   ],
   "SP": [
     {
       name: 'São Paulo',
       img: 'img_teste/são_paulo.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: 'A cidade conhecida como "Selva de pedras" ou ainda "A cidade que nunca dorme" também é exemplo de inclusão '
     },
     {
       name: 'São Sebastião',
       img: 'img_teste/sao_sebastiao.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "O litoral paulista pode ser uma boa pedida! Uma cidade paradisíaca e, acima de tudo, inclusiva! "
     },
     {
       name: 'Socorro',
       img: 'img_teste/socorro.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Destino dos amantes de adrenalina, Socorro é uma boa pedida para se aventurar independente de suas restrições "
     }
   ],
   "PR": [
     {
       name: 'Foz do Iguaçu',
       img: 'img_teste/foz_do_iguaçu.webp',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Desfrute o mix de sensações que somente as cataratas podem lhe causar! "
     },
     {
       name: 'Curitiba',
       img: 'img_teste/curitiba.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "A capital sustentável é uma boa opção parao seu lazer, aproveite o melhor que curitiba pode oferecer!  "
     },
     {
       name: 'Ilha do Mel',

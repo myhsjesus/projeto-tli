@@ -69,11 +69,6 @@
     background: none;
     }
   
-  body.high-contrast .title1 {
-    color: #ffffff !important;
-    background-color: #005cc584;
-    }
-  
   .high-contrast p{
     color: #ddd !important;
   }
@@ -99,15 +94,4 @@
   /*Aumentar fonte*/
   .font-size {
     font-size: large;
-  }
-  
-  @media only screen and (max-width: 1200px) {
-  
-      .logo {
-          margin-left: 20rem;
-      }
-  
-      header {
-          margin-left: -30rem;
-      }
   }

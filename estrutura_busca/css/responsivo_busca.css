@@ -1,0 +1,250 @@
+/* Common Responsive Styles */
+@media screen and (max-width: 1280px) {
+    body {
+        max-width: 1280px;
+    }
+
+    .title {
+        grid-template-rows: 50px;
+    }
+
+    .title button img {
+        max-width: 30%;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        max-width: 1000px;
+    }
+
+    .card img {
+        width: 300px;
+        max-height: 200px;
+    }
+
+    .footer {
+        font-size: 15px;
+        padding: 50px;
+    }
+
+    .imgfooter,
+    .imgfooter2 {
+        padding-top: 5%;
+        padding-left: 0;
+    }
+
+    .imgfooter img {
+        max-width: 10%;
+        margin: 1%;
+
+    }
+
+    .imgfooter2 img {
+        max-width: 10%;
+        margin: 1%;
+    }
+
+    .tila img {
+        max-width: 23%;
+    }
+
+    .tila {
+        margin-left: 23%;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+}
+
+/*tablet*/
+
+@media screen and (max-width: 800px) {
+    .title {
+        grid-template-rows: 50px;
+        max-width: 100%;
+    }
+
+    .title button img {
+        max-width: 30%;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        max-width: 600px;
+    }
+
+    .card {
+        text-align: left;
+        border: 1px solid #005BC5;
+        padding: 7%;
+        margin: 2%;
+        box-shadow: 0 2px 4px #01346e;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: 60px 150px 50px;
+        grid-template-areas: ". title "
+            "image text "
+            ". button ";
+    }
+
+    .card .pacote-img img {
+        width: 180px;
+        max-height: 100px;
+    }
+
+    .pacote-img{
+        grid-area: image;
+    }
+
+    .card-title {
+        grid-area: title;
+
+    }
+
+    .card p {
+        grid-area: text;
+        font-size: 1em;
+    }
+    .card-button {
+        width: 70px;
+        height: 30px;
+      }
+
+    #footer {
+        height: 14rem;
+        margin-top: 60rem;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 4rem 4rem 4rem 2rem;
+        grid-template-areas: 'insta txt'
+            'email latila'
+            '. . '
+            'copyright copyright';
+    }
+
+
+    .imgfooter img {
+        margin-left: -12%;
+        max-width: 30px;
+    }
+
+    .imgfooter2 img {
+        margin-left: -12%;
+        max-width: 30px;
+    }
+
+    .text {
+        padding-top: 70%;
+        font-size: 15px;
+    }
+
+    .tila img {
+        max-width: 60px;
+        margin-left: -15%;
+    }
+
+    .font-size {
+        font-size: medium-large;
+      }
+}
+
+/*celular*/
+
+@media screen and (max-width: 600px) {
+    .title {
+        grid-template-rows: 50px;
+        max-width: 100%;
+    }
+
+    .title button img {
+        max-width: 30%;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        max-width: 600px;
+    }
+
+    .card {
+        text-align: left;
+        border: 1px solid #005BC5;
+        padding: 7%;
+        margin: 2%;
+        box-shadow: 0 2px 4px #01346e;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: 50px 100px 50px;
+        grid-template-areas: ". title "
+            "image text "
+            ". button ";
+    }
+
+    .card .pacote-img img {
+        width: 150px;
+        max-height: 100px;
+    }
+
+    .pacote-img{
+        grid-area: image;
+    }
+
+    .card-title {
+        grid-area: title;
+
+    }
+
+    .card p {
+        grid-area: text;
+        font-size: 1em;
+    }
+    .card-button {
+        width: 70px;
+        height: 30px;
+      }
+
+    #footer {
+        height: 14rem;
+        margin-top: 60rem;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 4rem 4rem 4rem 2rem;
+        grid-template-areas: 'insta txt'
+            'email latila'
+            '. . '
+            'copyright copyright';
+    }
+
+
+    .imgfooter img {
+        margin-left: -12%;
+        max-width: 30px;
+    }
+
+    .imgfooter2 img {
+        margin-left: -12%;
+        max-width: 30px;
+    }
+
+    .text {
+        padding-top: 70%;
+        font-size: 15px;
+    }
+
+    .tila img {
+        max-width: 60px;
+        margin-left: -15%;
+    }
+}

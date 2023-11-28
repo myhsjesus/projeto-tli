@@ -30,7 +30,7 @@ const pacotes = {
     {
       name: 'Socorro',
       img: 'img_teste/socorro.jpg',
-      text: "Destino dos amantes de adrenalina, Socorro é uma boa pedida para se aventurar independente de suas restrições "
+      text: "Destino dos amantes de adrenalina, Socorro é uma boa opção para se aventurar independente de suas restrições "
     }
   ],
   "PR": [
@@ -47,58 +47,58 @@ const pacotes = {
     {
       name: 'Ilha do Mel',
       img: 'img_teste/ilha_do_mel.webp',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Local de belas praias, a Ilha do Mel é o destino perfeito para a sua viagem! "
     }
   ],
   "BA": [
     {
       name: 'Salvador',
       img: 'img_teste/salvador.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Terra boa, com muito calor humano e um tempero únco, a captal baiana é uma ótima opção para as suas férias "
     },
     {
       name: 'Barra. Salvador',
       img: 'img_teste/barra.webp',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Ah, a Barra... Que destino maravilhoso para turistar, principalmente se for acompanhado por quem ama! "
     },
     {
       name: 'Porto Seguro',
       img: 'img_teste/porto_seguro.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Porto Seguro é o lugar perfeito para quem busca sol, mar e diversão. Possui diversas opções de lazer para tornar a sua viagem inesquecível! "
     }
   ],
   "PE": [
     {
       name: 'Porto de Galinhas',
       img: 'img_teste/porto_galinha.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Lugar tão bonito que nem dá vontade de voltar para casa! Desfrute as belezas de Porto durantes as suas férias! "
     },
     {
       name: 'Boa Viagem',
       img: 'img_teste/boa_viagem.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: '"Lembro da moça bonita da praia de Boa Viagem..." É realmente impossível esquecer este lugar apaixonante!'
     },
     {
       name: 'Fernando de Noronha',
       img: 'img_teste/noronha.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "É inevitável não se apaixonar por este paraíso tropical, Noronhe-se! Suas férias merecem! "
     }
   ],
   "RS": [
     {
       name: 'Gramado',
       img: 'img_teste/gramado.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Sonho doa amantes de frio, Gramado é um destino muito bom para quem quer conhecer o clima europeu sem sair do Brasil "
     },
     {
       name: 'Bento Gonçalves',
       img: 'img_teste/bento_gonçalves.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Aproveite as belezas da Serra Gaúcha! Bento Gonçalves é uma boa opção para os amantes de um bom vinho. "
     },
     {
       name: 'Porto Alegre',
       img: 'img_teste/porto_alegre.jpg',
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit "
+      text: "Venha se maravilhar com as belezas de Porto Alegre , onde cada esquina guarda  uma surpresa especial."
     }
   ]
 };

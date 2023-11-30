@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 }
 
+
+//Função criar o layout da Busca
 function createPacote(pacote){
     const pacoteDiv = document.createElement('div')
     pacoteDiv.classList.add('card-container')

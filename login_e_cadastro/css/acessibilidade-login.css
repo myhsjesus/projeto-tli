@@ -63,15 +63,16 @@
     display: flex;
    }
   body.high-contrast h2 {
-    color: #fff !important;
+    color: lime !important;
   }
   
   body.high-contrast h3 {
-    color: #fffbfb !important;
+    color: lime !important;
   }
   
   body.high-contrast pre {
-    color: #ffffff !important;
+    color: rgb(0, 0, 0)!important;
+    background-color: lime;
   }
   
   body.high-contrast .input1::placeholder {

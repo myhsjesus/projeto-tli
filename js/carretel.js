@@ -1,3 +1,4 @@
+//Função para intercalar as imagens dos slides conforme for acionada
 let slideIndex = 1;
 showSlides(slideIndex);
 

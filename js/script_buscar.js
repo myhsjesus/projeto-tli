@@ -1,3 +1,5 @@
+
+//Uma array de objetos
 const pacotes = {
   "RJ": [
     {

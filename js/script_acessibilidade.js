@@ -1,3 +1,4 @@
+//Fublçao de startar o menu de acessibilidade
 function Start() {
     var menu = document.getElementById('botoes');
     if (menu.style.display === "none"){

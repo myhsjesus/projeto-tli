@@ -231,26 +231,3 @@ body {
   border-radius: 50px;
 }
 
-/*Contraste*/
-body.high-contrast {
-  color: #fff !important;
-  background-color: #000 !important;
-  font-size: large !important;
-}
-
-body.high-contrast h1 {
-  color: #fff !important;
-}
-
-body.high-contrast h2 {
-  color: #17f9ff !important;
-}
-
-.high-contrast p {
-  color: #ddd !important;
-}
-
-.high-contrast .container-header {
-  grid-template-areas: '. title contraste2 img-mao2'
-    '. title contraste2 img-mao2' !important;
-}

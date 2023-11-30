@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+/*Define a imagem do fundo*/
 .background {
     width: 100%;
     height: 100vh;
@@ -15,6 +17,7 @@
 
 }
 
+/*inicio da class home que é uma div pai*/
 .home {
     position: absolute;
     top: 50%;
@@ -32,6 +35,7 @@
 
 }
 
+/*Estilos para o link*/
 .login .sign-up {
     display: flex;
     justify-content: center;
@@ -51,6 +55,7 @@
     text-decoration: underline;
 }
 
+/*Inicio da class content*/
 .content {
     display: flex;
     flex-direction: column;
@@ -159,6 +164,7 @@
     bottom: 15px;
 }
 
+/*Estilo do botão*/
 .login .button {
     width: 100%;
     height: 40px;
@@ -183,13 +189,14 @@ button:active {
 }
 
 
+/* mexendo na imagem da logo*/
 .logo img {
     width: 35%;
     height: auto;
     margin-left: 9.3rem;
     border-radius: 10em;
-
 }
+
 .logo{
     display:flex ;
 }

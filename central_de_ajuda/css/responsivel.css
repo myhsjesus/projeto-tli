@@ -1,0 +1,223 @@
+@media screen and (max-width: 1200px) {
+
+
+  /* responsivo menu */
+  .menu_logo {
+    margin-left: 20rem;
+  }
+
+  .menu_logo .logo {
+    margin-left: 5rem;
+  }
+
+  .dp-menu {
+    margin-left: -2rem;
+    width: 42rem;
+  }
+
+  /* fim do menu*/
+
+  .title1 {
+    padding: 4%;
+  }
+
+  /*Estilos para o container dos cartões*/
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5%;
+    max-width: 1000px;
+  }
+
+  /*Estilos para o container dos cartões*/
+  .card-container2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 800px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+
+  /* responsivo menu */
+  .dp-menu {
+    margin-left: -4rem;
+    width: 13rem;
+    height: 11rem;
+  }
+
+  .menu_logo .logo {
+    margin-left: -10rem;
+  }
+
+  nav ul li a {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  nav ul ul {
+    background-color: #005BC5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    left: 12rem;
+    margin-top: -2rem;
+    position: absolute;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  nav ul ul {
+    height: 6rem;
+    padding: 1.65rem;
+    line-height: -1rem;
+  }
+
+  /* fim menu */
+  /* estilizandos os títulos e subtítulos */
+  .title {
+    font-size: 2.5em;
+  }
+
+  .title1 {
+    font-size: 1.5em;
+    padding: 6%;
+  }
+
+  /*Estilos para o container dos cartões*/
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 300px;
+    margin-bottom: 30%;
+  }
+
+  /*Estilos para o container dos cartões*/
+  .card-container2 {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    max-width: 300px;
+    gap: 10%;
+    margin-top: 2%;
+    margin-bottom: 20%;
+  }
+/*Estilo dos cartões */
+  .card-title {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+
+  }
+
+  .card p {
+    font-size: 01rem;
+  }
+ 
+  .card p h4 {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+ 
+  
+ 
+  .card2 p {
+    font-size: 1rem;
+  }
+
+  /*rodapé*/
+  .footer {
+    font-size: 15px;
+    padding: 50px;
+  }
+  .imgfooter, .imgfooter2 {
+    padding-top: 5%;
+    padding-left: 0;
+  }
+  .imgfooter img {
+    max-width: 20%;
+    margin: 1%;
+
+  }
+  
+  .imgfooter2 img {
+    max-width: 20%;
+    margin: 1%;
+  }
+  .tila img {
+    max-width: 23%;
+  }
+  .tila {
+    margin-left: 23%;
+  }
+  .text {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  body {
+    height: 280vh;
+
+  }
+
+  /* responsivo menu */
+  .dp-menu {
+    margin-left: -10rem;
+    width: 13rem;
+    height: 11rem;
+  }
+
+  .menu_logo .logo {
+    margin-left: -16rem;
+  }
+
+
+  nav ul li a {
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  nav ul ul {
+    background-color: #005BC5;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    left: 12rem;
+    margin-top: -2rem;
+    position: absolute;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  nav ul ul {
+    height: 6rem;
+    padding: 1.65rem;
+    line-height: -1rem;
+  }
+
+  /* fim menu */
+
+  /* responsivo footer */
+  #footer {
+    height: 14rem;
+    margin-top: 60rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 4rem 4rem 3rem;
+    grid-template-areas: 'insta txt'
+      'email latila'
+      'copyright copyright';
+  }
+  /*fim do footer*/
+
+}

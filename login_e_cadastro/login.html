@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,22 +14,26 @@
 
 <body>
 
+
+    <!--Content aonde aparece ao lado do input
+    e também define a imagem de fundo-->
     <div class="background"></div>
     <section class="home">
         <div class="content">
-            <a href="img/logo2.png" class="logo"><img src="img/logo2.png" alt=""></a>
-            <a href="img/contraste-logo.png" class="logo-contraste"><img src="img/contraste-logo.png" alt=""></a>
-            <h2>BEM VINDO</h2>
+            <img src="img/logo2.png" class="logo" alt="">
+            <img src="img/contraste-logo.png" class="logo-contraste" alt="">
+            <h2>BEM-VINDO</h2>
             <h3>THE LEADERS OF INCLUSION</h3>
             <pre>VIAJAR É PARA TODOS!</pre>
 
 
         </div>
 
+        <!--Parte do input login-->
         <div class="login">
             <h2>ENTRAR</h2>
             <div class="input ">
-                <input type="text" id="usuario" class="input1 " placeholder="Email ou usuário" required>
+                <input type="text" id="usuario" class="input1 " placeholder="Email ou Usuário" required>
 
             </div>
             <div class="input" id="input">
@@ -44,13 +48,14 @@
                         onclick="login()">Entrar</button>
             </div>
             <div class="sign-up">
-                <p>Não tem uma conta? <a href="cadastro.html">Inscrever-se</a></p>
+                <p>Não tem uma conta? <a href="../cadastro.html">Inscrever-se</a></p>
             </div>
 
         </div>
 
     </section>
 
+   <!-- Botão de acessibilidade-->
     <div class="acessibilidade_container">
 
         <button onclick="Start()" class="main" id="main">
@@ -73,6 +78,8 @@
 
         </div>
     </div>
+
+    <!--API de libras-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>

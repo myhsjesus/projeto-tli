@@ -54,7 +54,7 @@ function login() {
   // Simples verificação de login (apenas para exemplo)
   if (usuario === 'teste' && senha === '2023') {
       console.log("ok") 
-      location. href="cadastro.html"
+      location. href="home.html"
   } else {
       console.log("erro")
       dica.style.display = "flex"

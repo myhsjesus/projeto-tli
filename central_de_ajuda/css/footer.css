@@ -3,11 +3,11 @@
 .footer { 
     grid-area: footer;/*criando o grid area do footer*/
     display: grid; 
-    grid-template-columns: 30% 30% 30%;  
-    grid-template-rows: 65px 65px; 
+    grid-template-columns: 33% 33% 33%;  
+    grid-template-rows: 65px 95px; 
     background-color: #005bc5; 
     color: #fff;
-    gap: 10px; 
+    row-gap: 10px;
     grid-template-areas: 'insta copyright txt' 
                          'email copyright latila'  
 }
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 2%;
+    padding-top: 5%;
 }
 .imgfooter2{
     grid-area: email;
@@ -24,13 +24,13 @@
     flex-direction: row;
     align-items: center;
 }
-.text{
+.copyright{
     grid-area: copyright;
-    top: 172%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 5%;
 }
 .txtLatila{
     grid-area: txt;
@@ -38,12 +38,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 5%;
 }
 .latila{
     grid-area: latila;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 3%;
 }
 .imgfooter img{
     max-width: 50px;
@@ -54,8 +56,9 @@
     margin: 1%;
 }
 .latila img{
-    max-width: 85px;
+    max-width: 75px;
     background-color: #005bc5;
+    padding-top: 5%;
 }
 .imgfooter a{
     text-decoration: none;
@@ -87,3 +90,6 @@
   border-radius: 50px;
 }
 
+footer{
+    margin-bottom: -5rem;
+}

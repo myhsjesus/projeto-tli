@@ -18,16 +18,12 @@
         margin-bottom: 1rem;
     }
 
-    .content pre {
-        font-size: 1.5em;
-    }
-
 }
 
 @media screen and (max-width: 992px) {
 
     .home {
-        margin-left: -3.50rem;
+        margin-left: -3.90rem;
     }
 
     .logo {
@@ -38,21 +34,17 @@
         margin-left: 7.75rem;
     }
 
-    .content {
-        width: 35rem;
-    }
-
     .content h2 {
         margin-bottom: 0.5rem;
-        font-size: 3em;
+        font-size: 3.2em;
     }
 
     .content h3 {
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 
     .content pre {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 
     .login {
@@ -60,14 +52,14 @@
     }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 768px) {
     
     .home{
-        margin-left: -3rem;
+        margin-left: -2.95rem;
     }
 
     .logo {
-        margin-left: 5.3rem;
+        margin-left: 5.4rem;
         margin-top: 3rem;
     }
 
@@ -92,8 +84,7 @@
 @media screen and (max-width: 600px) {
    
     .home {
-        margin-top: -5rem;
-        margin-left: -3rem;
+        margin-top: -3rem;
         display: flex;
         flex-direction: column;
     }
@@ -104,13 +95,9 @@
         margin-left: 1.5rem;
     }
 
-    .content pre {
-        align-items: center;
-    }
-
     .login {
         width: 25rem;
-        height: 31rem;
+        height: 25rem;
         margin-left: 1.5rem;
     }
 

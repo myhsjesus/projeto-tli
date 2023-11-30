@@ -1,3 +1,6 @@
+
+//funções para o botão de acessibilide como:
+// contraste, modo de leitura e aumentar a fonte
 var bodyElement = document.body;
 
  function toggleContrast(){

@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link das páginas de JavaScript e CSS-->
     <link rel="stylesheet" href="css/style_busca.css">
     <link rel="stylesheet" href="css/acessibilidade.css">
     <link rel="stylesheet" href="css/responsivo_busca.css">
     <script src="js/script_acessibilidade.js"></script>
     <script src="js/script_result.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="img/quebraCabeçasTLG.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/quebraCabeçasTLG.png" />
     <title>TLI- Sua busca</title>
 </head>
-<body>
-     <!--Header-->
-     
-     <header class="title">
-        
-        <button><a href="\index.html"><img src="img/seta-esquerda.png" alt="seta para a esquerda"></a></button> 
-        
-        <h1 class="title_busca">De acordo com sua busca:</h1>
-   
-    </header>
 
-        <div id="resultado"></div> 
+<body>
+    <!--Header-->
+
+    <header class="title">
+
+        <button><a href="\index.html"><img src="img/seta-esquerda.png" alt="seta para a esquerda"></a></button>
+
+        <h1 class="title_busca">De acordo com sua busca:</h1>
+
+    </header>
+    <!--Fim do header-->
+
+    <div id="resultado"></div>
     <!-- rodapé do site -->
     <footer class="footer">
         <div class="contatos">
-          <div class="imgfooter"><img src="img/instagram.png" alt=""><a class="perfil" href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a></div>
-          <div class="imgfooter2"><img src="img/email.png" alt=""><a href="mailto:theleadersgirls2023@gmail.com">theleadersgirls2023@gmail.com</a></div>
+            <div class="imgfooter"><img src="img/instagram.png" alt=""><a class="perfil"
+                    href="http://instagram.com/the_leaders_girls?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D">@the_leaders_girls</a>
+            </div>
+            <div class="imgfooter2"><img src="img/email.png" alt=""><a
+                    href="mailto:theleadersgirls2023@gmail.com">theleadersgirls2023@gmail.com</a></div>
         </div>
         <p class="text">&copy; COPYRIGHT FOR TLG</p>
         <p class="txtLatila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
         <div class="latila"><a href="sitelatila.com"><img src="img/logoLatila.png" alt="siteLATILA"></a></div>
     </footer>
     <!-- fim do rodapé -->
-
+    <!--Criando o menu de acessibilidade-->
     <div class="acessibilidade_container">
 
         <button onclick="Start()" class="main" id="main">
@@ -60,6 +67,8 @@
             </button>
         </div>
     </div>
+    <!--Fim do botão de acessibiidade-->
+    <!--API de LIBRAS-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -70,6 +79,9 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <!--Fim da API de LIBRAS-->
+    <!--Link das páginas de JavaScript-->
     <script src="js/script_contraste.js"></script>
 </body>
+
 </html>

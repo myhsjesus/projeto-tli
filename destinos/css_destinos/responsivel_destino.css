@@ -2,6 +2,8 @@
 
 /* Responsive Navigation Styles */
 /*Tablet*/
+
+/*menu*/
 @media screen and (max-width: 1280px) {
   .menu_logo {
     margin-left: 33rem;
@@ -29,6 +31,7 @@
 
 /* Common Responsive Styles */
 @media screen and (max-width: 1280px) {
+ /*sub-menu*/
   .title {
       font-size: 5.5em;
   }
@@ -57,6 +60,7 @@
       font-size: 1.2em;
   }
 
+  /*cards de destinos*/
   .gallery-content {
       grid-template-columns: 1fr 1fr;
   }
@@ -73,6 +77,7 @@
   }
 
   
+  /*roda-pé*/
   .footer {
     font-size: 15px;
     padding: 50px;
@@ -154,6 +159,8 @@
 
 /* Common Responsive Styles */
 @media screen and (max-width: 600px) {
+  
+  /*Sub-menu*/
   .title {
     font-size: 3.5em;
     }
@@ -182,6 +189,8 @@
     font-size: 1.2em;
   }
 
+
+  /*cards de fotos*/
   .gallery-content {
     grid-template-columns: 1fr;
   }
@@ -197,6 +206,7 @@
     width: 25%;
   }
   
+  /*roda-pé*/
   #footer {
     height: 14rem;
     margin-top: 60rem;
@@ -235,6 +245,7 @@
 /*ajustes notebock*/
 @media screen and (width: 1800px){
 
+  /*Cards*/
   .gallery-content {
     grid-template-columns: 1fr 1fr 1fr;
 }

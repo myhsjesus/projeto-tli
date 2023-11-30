@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link das páginas de JavaScript e CSS-->
     <link rel="stylesheet" href="css/style_home.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/form.css">
@@ -43,9 +44,9 @@
 
                 </header>
 
-                    <div class="icon_avatar">
-                        <img src="img/icon_avatar.png" alt="">
-                    </div>
+                <div class="icon_avatar">
+                    <img src="img/icon_avatar.png" alt="">
+                </div>
             </div>
 
             <!-- Fim do menu/header -->
@@ -88,7 +89,7 @@
                         id="setaIdaBaixo" class="seta" onclick="startFormIda()">
                     <img src="img/seta-navegar2.png" alt="seta vermelha pra cima" id="setaIdaCima" class="seta2"
                         onclick="startFormIda()"></label>
-
+                <!-- subdivisão do formulario para separar ida e volta -->
                 <div id="form_ida_volta">
                     <label for="Ida e Volta">Passageiros </label>
                     <input type="number" id="passageiros" name="passageiros" required>
@@ -107,6 +108,9 @@
 
                     <button type="submit"><a href="estrutura_busca\busca.html">Procurar</a></button>
                 </div>
+                <!-- fim do ida e volta -->
+
+                <!-- subdivisão do formulario para separar só ida -->
                 <div id="form_so_ida">
                     <label for="Ida e Volta">Passageiros </label>
                     <input type="number" id="passageiros" name="passageiros" required>
@@ -122,9 +126,11 @@
 
                     <button type="submit"><a href="estrutura_busca\busca.html">Procurar</a></button>
                 </div>
+                <!-- fim do só ida -->
             </form>
         </div>
         <!-- Fim do formulário -->
+        <!-- Cards para missão, visão e valores -->
         <div class="about-container">
 
             <div class="card-container" id="card">
@@ -133,26 +139,29 @@
                         <h2> Missão</h2>
                         <img src="img/quem-somos-img.png" alt="Quem somos">
                     </div>
-                    <p class="text-about">A TLI (The Leaders of Inclusion) tem como principal missão a inclusão e a equidade no turismo, visando o desejo de incluir lazer para as pessoas independente de suas restrições.</p>
+                    <p class="text-about">Nós somos uma empresa de turismo acessível fundada para apenas um propósito:
+                        garantir que todos tenham acesso a um bom lazer!</p>
                 </div>
                 <div class="card">
                     <div class="card-title">
                         <h2> Visão</h2>
                         <img src="img/quem-somos-img.png" alt="Quem somos">
                     </div>
-                    <p class="text-about">Nós visamos guiar e inspirar a maneira como trabalhamos todos os dias. Considerando tratar o próximo como você gostaria de ser tratado.</p>
+                    <p class="text-about">Guiar e inspirar a maneira como trabalhamos todos os dias.
+                        Considerando tratar o próximo como você gostaria de ser tratado.</p>
                 </div>
                 <div class="card">
                     <div class="card-title">
                         <h2> Valores</h2>
                         <img src="img/quem-somos-img.png" alt="Quem somos">
                     </div>
-                    <p class="text-about">Nós trabalhamos com respeito, sempre promovendo a inclusão e a equidade. 
-                        Além disso, respeitamos a diversidade com a finalidade de promover uma boa parceria.
-                    </p>
+                    <p class="text-about">Nós trabalhamos com respeito, sempre promovendo a inclusão e a equidade.
+                        Além disso, respeitamos a diversidade com a finalidade de promover uma boa parceria.</p>
                 </div>
             </div>
         </div>
+        <!-- Fim dos cards para missão, visão e valores -->
+        <!-- Card para o quiz -->
         <div class="quiz-main">
             <div class="quiz-container" id="quiz">
                 <div class="quiz">
@@ -164,6 +173,7 @@
                 </div>
             </div>
         </div>
+        <!-- Fim do quiz -->
 
         <!--Criando o footer-->
         <footer id="footer">
@@ -178,9 +188,9 @@
             <p class="txtLatila">CONHEÇA TAMBÉM <br> NOSSA PARCEIRA:</p>
             <div class="latila"><a href="sitetila.com"><img src="img/logoLatila.png" alt="siteTILA"></a></div>
         </footer>
-
+        <!--Fim do footer-->
     </div>
-
+    <!--Criando o menu de acessibilidade-->
     <div class="acessibilidade_container">
 
         <button onclick="Start()" class="main" id="main">
@@ -206,6 +216,8 @@
             </button>
         </div>
     </div>
+    <!--Fim do botão de acessibiidade-->
+    <!--API de LIBRAS-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -216,6 +228,8 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <!--Fim da API de LIBRAS-->
+    <!--Link das páginas de JavaScript-->
     <script src="js/script_contraste.js"></script>
     <script src="js/carretel.js"></script>
 

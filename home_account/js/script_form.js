@@ -1,4 +1,4 @@
-
+//funções para startar o formulário de ida e volta
 function startFormIdaEVolta() {
     var menu = document.getElementById('form_ida_volta');
     var menu2 = document.getElementById('form_so_ida');
@@ -19,6 +19,7 @@ function startFormIdaEVolta() {
         seta.style.display = "inline-block";
     }
 } 
+//funções para startar o formulário de ida
 function startFormIda() {
     var menu = document.getElementById('form_so_ida');
     var menu2 = document.getElementById('form_ida_volta');

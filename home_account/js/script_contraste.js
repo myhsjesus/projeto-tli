@@ -1,3 +1,4 @@
+//funções de acessibilidade
 var bodyElement = document.body;
 
  function toggleContrast(){
